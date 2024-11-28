@@ -40,7 +40,7 @@ namespace Oracle.DTO
 			this.Username = row["UserName"].ToString();
 			this.Password = row["password"].ToString();
 			this.Name = row["Name"].ToString();
-			this.Powerfull = row["Powerfull"].ToString();
+			this.Powerfull = row["Powerful"].ToString();
 		}
 	}
 

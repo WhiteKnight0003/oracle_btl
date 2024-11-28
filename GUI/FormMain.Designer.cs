@@ -28,15 +28,15 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.tcMenu = new Guna.UI2.WinForms.Guna2TabControl();
 			this.Dashboard = new System.Windows.Forms.TabPage();
 			this.PageListTeachers = new System.Windows.Forms.TabPage();
@@ -86,8 +86,24 @@
 			this.PageRemind = new System.Windows.Forms.TabPage();
 			this.PageListStudentGuildByTeachers = new System.Windows.Forms.TabPage();
 			this.PageProjectByStudents = new System.Windows.Forms.TabPage();
+			this.PageListAccount = new System.Windows.Forms.TabPage();
+			this.btnDeleteAcc = new Guna.UI2.WinForms.Guna2Button();
+			this.btnModifyAcc = new Guna.UI2.WinForms.Guna2Button();
+			this.btnAddAcc = new Guna.UI2.WinForms.Guna2Button();
+			this.datagvListAccount = new System.Windows.Forms.DataGridView();
+			this.tbPasswordAcc = new Guna.UI2.WinForms.Guna2TextBox();
+			this.tbNameAcc = new Guna.UI2.WinForms.Guna2TextBox();
+			this.cbViewAcc = new System.Windows.Forms.ComboBox();
+			this.label3 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
+			this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.cbFitterAcc = new System.Windows.Forms.ComboBox();
+			this.cbTypeAccount = new System.Windows.Forms.ComboBox();
 			this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
 			this.lbUserLogin = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.btnSaveAcc = new Guna.UI2.WinForms.Guna2Button();
 			this.tcMenu.SuspendLayout();
 			this.PageListTeachers.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.DatagvListTeachers)).BeginInit();
@@ -95,6 +111,8 @@
 			((System.ComponentModel.ISupportInitialize)(this.DatagvListStudents)).BeginInit();
 			this.PageListProjects.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.DatagvListProjects)).BeginInit();
+			this.PageListAccount.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.datagvListAccount)).BeginInit();
 			this.guna2Panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -109,6 +127,7 @@
 			this.tcMenu.Controls.Add(this.PageRemind);
 			this.tcMenu.Controls.Add(this.PageListStudentGuildByTeachers);
 			this.tcMenu.Controls.Add(this.PageProjectByStudents);
+			this.tcMenu.Controls.Add(this.PageListAccount);
 			this.tcMenu.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tcMenu.ItemSize = new System.Drawing.Size(220, 70);
 			this.tcMenu.Location = new System.Drawing.Point(0, 64);
@@ -259,27 +278,27 @@
 			// 
 			// DatagvListTeachers
 			// 
-			dataGridViewCellStyle37.BackColor = System.Drawing.Color.White;
-			this.DatagvListTeachers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle37;
+			dataGridViewCellStyle28.BackColor = System.Drawing.Color.White;
+			this.DatagvListTeachers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
 			this.DatagvListTeachers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle38.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle38.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.DatagvListTeachers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle38;
+			dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle29.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.DatagvListTeachers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
 			this.DatagvListTeachers.ColumnHeadersHeight = 4;
 			this.DatagvListTeachers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle39.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle39.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle39.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle39.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.DatagvListTeachers.DefaultCellStyle = dataGridViewCellStyle39;
+			dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle30.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.DatagvListTeachers.DefaultCellStyle = dataGridViewCellStyle30;
 			this.DatagvListTeachers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
 			this.DatagvListTeachers.Location = new System.Drawing.Point(28, 120);
 			this.DatagvListTeachers.Name = "DatagvListTeachers";
@@ -551,27 +570,27 @@
 			// 
 			// DatagvListStudents
 			// 
-			dataGridViewCellStyle40.BackColor = System.Drawing.Color.White;
-			this.DatagvListStudents.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle40;
+			dataGridViewCellStyle31.BackColor = System.Drawing.Color.White;
+			this.DatagvListStudents.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle31;
 			this.DatagvListStudents.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle41.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle41.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.DatagvListStudents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle41;
+			dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle32.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.DatagvListStudents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
 			this.DatagvListStudents.ColumnHeadersHeight = 4;
 			this.DatagvListStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle42.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle42.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle42.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.DatagvListStudents.DefaultCellStyle = dataGridViewCellStyle42;
+			dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle33.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.DatagvListStudents.DefaultCellStyle = dataGridViewCellStyle33;
 			this.DatagvListStudents.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
 			this.DatagvListStudents.Location = new System.Drawing.Point(27, 118);
 			this.DatagvListStudents.Name = "DatagvListStudents";
@@ -671,6 +690,7 @@
 			this.btnDeleteProject.Size = new System.Drawing.Size(83, 44);
 			this.btnDeleteProject.TabIndex = 32;
 			this.btnDeleteProject.Text = "Xóa";
+			this.btnDeleteProject.Click += new System.EventHandler(this.btnDeleteProject_Click);
 			// 
 			// btnModifyProject
 			// 
@@ -686,6 +706,7 @@
 			this.btnModifyProject.Size = new System.Drawing.Size(83, 44);
 			this.btnModifyProject.TabIndex = 33;
 			this.btnModifyProject.Text = "Sửa";
+			this.btnModifyProject.Click += new System.EventHandler(this.btnModifyProject_Click);
 			// 
 			// btnViewProject
 			// 
@@ -701,6 +722,7 @@
 			this.btnViewProject.Size = new System.Drawing.Size(83, 44);
 			this.btnViewProject.TabIndex = 34;
 			this.btnViewProject.Text = "Xem";
+			this.btnViewProject.Click += new System.EventHandler(this.btnViewProject_Click);
 			// 
 			// btnAddProject
 			// 
@@ -809,27 +831,27 @@
 			// 
 			// DatagvListProjects
 			// 
-			dataGridViewCellStyle43.BackColor = System.Drawing.Color.White;
-			this.DatagvListProjects.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle43;
+			dataGridViewCellStyle34.BackColor = System.Drawing.Color.White;
+			this.DatagvListProjects.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle34;
 			this.DatagvListProjects.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle44.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle44.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.DatagvListProjects.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle44;
+			dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle35.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle35.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.DatagvListProjects.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
 			this.DatagvListProjects.ColumnHeadersHeight = 4;
 			this.DatagvListProjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle45.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle45.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle45.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle45.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.DatagvListProjects.DefaultCellStyle = dataGridViewCellStyle45;
+			dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle36.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.DatagvListProjects.DefaultCellStyle = dataGridViewCellStyle36;
 			this.DatagvListProjects.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
 			this.DatagvListProjects.Location = new System.Drawing.Point(25, 109);
 			this.DatagvListProjects.Name = "DatagvListProjects";
@@ -931,6 +953,210 @@
 			this.PageProjectByStudents.Text = "Đồ án thực hiện";
 			this.PageProjectByStudents.UseVisualStyleBackColor = true;
 			// 
+			// PageListAccount
+			// 
+			this.PageListAccount.Controls.Add(this.btnDeleteAcc);
+			this.PageListAccount.Controls.Add(this.btnModifyAcc);
+			this.PageListAccount.Controls.Add(this.btnSaveAcc);
+			this.PageListAccount.Controls.Add(this.btnAddAcc);
+			this.PageListAccount.Controls.Add(this.datagvListAccount);
+			this.PageListAccount.Controls.Add(this.tbPasswordAcc);
+			this.PageListAccount.Controls.Add(this.tbNameAcc);
+			this.PageListAccount.Controls.Add(this.cbViewAcc);
+			this.PageListAccount.Controls.Add(this.label3);
+			this.PageListAccount.Controls.Add(this.label2);
+			this.PageListAccount.Controls.Add(this.label1);
+			this.PageListAccount.Controls.Add(this.guna2HtmlLabel9);
+			this.PageListAccount.Controls.Add(this.guna2HtmlLabel3);
+			this.PageListAccount.Controls.Add(this.cbFitterAcc);
+			this.PageListAccount.Controls.Add(this.cbTypeAccount);
+			this.PageListAccount.Location = new System.Drawing.Point(224, 4);
+			this.PageListAccount.Name = "PageListAccount";
+			this.PageListAccount.Padding = new System.Windows.Forms.Padding(3);
+			this.PageListAccount.Size = new System.Drawing.Size(1154, 781);
+			this.PageListAccount.TabIndex = 8;
+			this.PageListAccount.Text = "Danh sách tài khoản";
+			this.PageListAccount.UseVisualStyleBackColor = true;
+			// 
+			// btnDeleteAcc
+			// 
+			this.btnDeleteAcc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnDeleteAcc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnDeleteAcc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnDeleteAcc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnDeleteAcc.FillColor = System.Drawing.Color.Red;
+			this.btnDeleteAcc.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnDeleteAcc.ForeColor = System.Drawing.Color.White;
+			this.btnDeleteAcc.Location = new System.Drawing.Point(1021, 180);
+			this.btnDeleteAcc.Name = "btnDeleteAcc";
+			this.btnDeleteAcc.Size = new System.Drawing.Size(83, 44);
+			this.btnDeleteAcc.TabIndex = 35;
+			this.btnDeleteAcc.Text = "Xóa";
+			this.btnDeleteAcc.Click += new System.EventHandler(this.btnDeleteAcc_Click);
+			// 
+			// btnModifyAcc
+			// 
+			this.btnModifyAcc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnModifyAcc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnModifyAcc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnModifyAcc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnModifyAcc.FillColor = System.Drawing.Color.Yellow;
+			this.btnModifyAcc.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnModifyAcc.ForeColor = System.Drawing.Color.Black;
+			this.btnModifyAcc.Location = new System.Drawing.Point(913, 180);
+			this.btnModifyAcc.Name = "btnModifyAcc";
+			this.btnModifyAcc.Size = new System.Drawing.Size(83, 44);
+			this.btnModifyAcc.TabIndex = 36;
+			this.btnModifyAcc.Text = "Sửa";
+			this.btnModifyAcc.Click += new System.EventHandler(this.btnModifyAcc_Click);
+			// 
+			// btnAddAcc
+			// 
+			this.btnAddAcc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnAddAcc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnAddAcc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnAddAcc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnAddAcc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+			this.btnAddAcc.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnAddAcc.ForeColor = System.Drawing.Color.White;
+			this.btnAddAcc.Location = new System.Drawing.Point(711, 180);
+			this.btnAddAcc.Name = "btnAddAcc";
+			this.btnAddAcc.Size = new System.Drawing.Size(83, 44);
+			this.btnAddAcc.TabIndex = 38;
+			this.btnAddAcc.Text = "Thêm";
+			this.btnAddAcc.Click += new System.EventHandler(this.btnAddAcc_Click);
+			// 
+			// datagvListAccount
+			// 
+			this.datagvListAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.datagvListAccount.Location = new System.Drawing.Point(45, 241);
+			this.datagvListAccount.Name = "datagvListAccount";
+			this.datagvListAccount.ReadOnly = true;
+			this.datagvListAccount.RowHeadersWidth = 51;
+			this.datagvListAccount.RowTemplate.Height = 24;
+			this.datagvListAccount.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+			this.datagvListAccount.Size = new System.Drawing.Size(1059, 414);
+			this.datagvListAccount.TabIndex = 6;
+			// 
+			// tbPasswordAcc
+			// 
+			this.tbPasswordAcc.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.tbPasswordAcc.DefaultText = "";
+			this.tbPasswordAcc.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.tbPasswordAcc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.tbPasswordAcc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbPasswordAcc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbPasswordAcc.Enabled = false;
+			this.tbPasswordAcc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.tbPasswordAcc.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.tbPasswordAcc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.tbPasswordAcc.Location = new System.Drawing.Point(913, 77);
+			this.tbPasswordAcc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.tbPasswordAcc.Name = "tbPasswordAcc";
+			this.tbPasswordAcc.PasswordChar = '\0';
+			this.tbPasswordAcc.PlaceholderText = "";
+			this.tbPasswordAcc.SelectedText = "";
+			this.tbPasswordAcc.Size = new System.Drawing.Size(189, 26);
+			this.tbPasswordAcc.TabIndex = 5;
+			// 
+			// tbNameAcc
+			// 
+			this.tbNameAcc.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.tbNameAcc.DefaultText = "";
+			this.tbNameAcc.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.tbNameAcc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.tbNameAcc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbNameAcc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbNameAcc.Enabled = false;
+			this.tbNameAcc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.tbNameAcc.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.tbNameAcc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.tbNameAcc.Location = new System.Drawing.Point(915, 38);
+			this.tbNameAcc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.tbNameAcc.Name = "tbNameAcc";
+			this.tbNameAcc.PasswordChar = '\0';
+			this.tbNameAcc.PlaceholderText = "";
+			this.tbNameAcc.SelectedText = "";
+			this.tbNameAcc.Size = new System.Drawing.Size(189, 26);
+			this.tbNameAcc.TabIndex = 5;
+			// 
+			// cbViewAcc
+			// 
+			this.cbViewAcc.Enabled = false;
+			this.cbViewAcc.FormattingEnabled = true;
+			this.cbViewAcc.Location = new System.Drawing.Point(550, 36);
+			this.cbViewAcc.Name = "cbViewAcc";
+			this.cbViewAcc.Size = new System.Drawing.Size(135, 24);
+			this.cbViewAcc.TabIndex = 4;
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+			this.label3.Location = new System.Drawing.Point(735, 83);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(103, 20);
+			this.label3.TabIndex = 3;
+			this.label3.Text = "Mật khẩu : ";
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+			this.label2.Location = new System.Drawing.Point(735, 40);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(145, 20);
+			this.label2.TabIndex = 3;
+			this.label2.Text = "Tên Tài khoản : ";
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+			this.label1.Location = new System.Drawing.Point(407, 40);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(127, 20);
+			this.label1.TabIndex = 2;
+			this.label1.Text = "Mã giáo viên :";
+			// 
+			// guna2HtmlLabel9
+			// 
+			this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
+			this.guna2HtmlLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.guna2HtmlLabel9.Location = new System.Drawing.Point(45, 202);
+			this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
+			this.guna2HtmlLabel9.Size = new System.Drawing.Size(46, 22);
+			this.guna2HtmlLabel9.TabIndex = 1;
+			this.guna2HtmlLabel9.Text = "Lọc : ";
+			// 
+			// guna2HtmlLabel3
+			// 
+			this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+			this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.guna2HtmlLabel3.Location = new System.Drawing.Point(45, 38);
+			this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+			this.guna2HtmlLabel3.Size = new System.Drawing.Size(176, 22);
+			this.guna2HtmlLabel3.TabIndex = 1;
+			this.guna2HtmlLabel3.Text = "Chọn loại tài khoản : ";
+			// 
+			// cbFitterAcc
+			// 
+			this.cbFitterAcc.FormattingEnabled = true;
+			this.cbFitterAcc.Location = new System.Drawing.Point(121, 200);
+			this.cbFitterAcc.Name = "cbFitterAcc";
+			this.cbFitterAcc.Size = new System.Drawing.Size(182, 24);
+			this.cbFitterAcc.TabIndex = 0;
+			// 
+			// cbTypeAccount
+			// 
+			this.cbTypeAccount.Enabled = false;
+			this.cbTypeAccount.FormattingEnabled = true;
+			this.cbTypeAccount.Location = new System.Drawing.Point(227, 36);
+			this.cbTypeAccount.Name = "cbTypeAccount";
+			this.cbTypeAccount.Size = new System.Drawing.Size(152, 24);
+			this.cbTypeAccount.TabIndex = 0;
+			this.cbTypeAccount.SelectedIndexChanged += new System.EventHandler(this.cbTypeAccount_SelectedIndexChanged);
+			// 
 			// guna2Panel1
 			// 
 			this.guna2Panel1.Controls.Add(this.lbUserLogin);
@@ -951,6 +1177,22 @@
 			this.lbUserLogin.TabIndex = 2;
 			this.lbUserLogin.Text = "guna2HtmlLabel3";
 			this.lbUserLogin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// btnSaveAcc
+			// 
+			this.btnSaveAcc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnSaveAcc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnSaveAcc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnSaveAcc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnSaveAcc.FillColor = System.Drawing.Color.Cyan;
+			this.btnSaveAcc.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSaveAcc.ForeColor = System.Drawing.Color.Black;
+			this.btnSaveAcc.Location = new System.Drawing.Point(811, 180);
+			this.btnSaveAcc.Name = "btnSaveAcc";
+			this.btnSaveAcc.Size = new System.Drawing.Size(83, 44);
+			this.btnSaveAcc.TabIndex = 38;
+			this.btnSaveAcc.Text = "Lưu";
+			this.btnSaveAcc.Click += new System.EventHandler(this.btnSaveAcc_Click);
 			// 
 			// FormMain
 			// 
@@ -973,6 +1215,9 @@
 			this.PageListProjects.ResumeLayout(false);
 			this.PageListProjects.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.DatagvListProjects)).EndInit();
+			this.PageListAccount.ResumeLayout(false);
+			this.PageListAccount.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.datagvListAccount)).EndInit();
 			this.guna2Panel1.ResumeLayout(false);
 			this.ResumeLayout(false);
 
@@ -1031,5 +1276,21 @@
 		private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
 		private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
 		private Guna.UI2.WinForms.Guna2Button btnViewProject;
+		private System.Windows.Forms.TabPage PageListAccount;
+		private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+		private System.Windows.Forms.ComboBox cbTypeAccount;
+		private System.Windows.Forms.ComboBox cbViewAcc;
+		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Label label1;
+		private Guna.UI2.WinForms.Guna2TextBox tbNameAcc;
+		private Guna.UI2.WinForms.Guna2Button btnDeleteAcc;
+		private Guna.UI2.WinForms.Guna2Button btnModifyAcc;
+		private Guna.UI2.WinForms.Guna2Button btnAddAcc;
+		private System.Windows.Forms.DataGridView datagvListAccount;
+		private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
+		private System.Windows.Forms.ComboBox cbFitterAcc;
+		private Guna.UI2.WinForms.Guna2TextBox tbPasswordAcc;
+		private System.Windows.Forms.Label label3;
+		private Guna.UI2.WinForms.Guna2Button btnSaveAcc;
 	}
 }

@@ -3,76 +3,28 @@
   "WorkspaceRootPath": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\dao\\studentsdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:dao\\studentsdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\gui\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|e:\\utc\\tl-gtvl-cua-toi\\n\u0103m 3 ki 1\\oracle\\oracle\\gui\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:gui\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|e:\\utc\\tl-gtvl-cua-toi\\n\u0103m 3 ki 1\\oracle\\oracle\\dao\\projectdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:dao\\projectdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|e:\\utc\\tl-gtvl-cua-toi\\n\u0103m 3 ki 1\\oracle\\oracle\\dao\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:dao\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\dao\\teachersdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:dao\\teachersdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|e:\\utc\\tl-gtvl-cua-toi\\n\u0103m 3 ki 1\\oracle\\oracle\\gui\\formaddstudents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:gui\\formaddstudents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|e:\\utc\\tl-gtvl-cua-toi\\n\u0103m 3 ki 1\\oracle\\oracle\\gui\\formaddproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:gui\\formaddproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|e:\\utc\\tl-gtvl-cua-toi\\n\u0103m 3 ki 1\\oracle\\oracle\\gui\\formaddproject.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\gui\\formaddproject.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:gui\\formaddproject.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\gui\\formaddproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:gui\\formaddproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|e:\\utc\\tl-gtvl-cua-toi\\n\u0103m 3 ki 1\\oracle\\oracle\\dao\\topicdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:dao\\topicdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\dao\\classdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:dao\\classdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\gui\\formaddstudents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:gui\\formaddstudents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\dto\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:dto\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\dto\\classdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:dto\\classdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\gui\\formaddteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:gui\\formaddteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\gui\\formmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:gui\\formmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\gui\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:gui\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\gui\\formaddstudents.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 196,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,110 +50,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormAddProject.cs [Design]",
-              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormAddProject.cs",
-              "RelativeDocumentMoniker": "GUI\\FormAddProject.cs",
-              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormAddProject.cs [Design]",
-              "RelativeToolTip": "GUI\\FormAddProject.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "UserDAO.cs",
+              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DAO\\UserDAO.cs",
+              "RelativeDocumentMoniker": "DAO\\UserDAO.cs",
+              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DAO\\UserDAO.cs",
+              "RelativeToolTip": "DAO\\UserDAO.cs",
+              "ViewState": "AgIAACEBAAAAAAAAAAAwwDUBAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T03:32:46.574Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProjectDAO.cs",
-              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DAO\\ProjectDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\ProjectDAO.cs",
-              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DAO\\ProjectDAO.cs",
-              "RelativeToolTip": "DAO\\ProjectDAO.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwCIAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T03:25:34.399Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormAddStudents.cs",
-              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormAddStudents.cs",
-              "RelativeDocumentMoniker": "GUI\\FormAddStudents.cs",
-              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormAddStudents.cs",
-              "RelativeToolTip": "GUI\\FormAddStudents.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAAJEAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T03:15:55.323Z",
+              "WhenOpened": "2024-11-28T16:04:52.513Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "StudentsDAO.cs",
-              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DAO\\StudentsDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\StudentsDAO.cs",
-              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DAO\\StudentsDAO.cs",
-              "RelativeToolTip": "DAO\\StudentsDAO.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAYwHMAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T13:18:13.019Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TeachersDAO.cs",
-              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DAO\\TeachersDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\TeachersDAO.cs",
-              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DAO\\TeachersDAO.cs",
-              "RelativeToolTip": "DAO\\TeachersDAO.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAwwCgAAABpAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T13:43:54.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FormAddProject.cs",
-              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormAddProject.cs",
-              "RelativeDocumentMoniker": "GUI\\FormAddProject.cs",
-              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormAddProject.cs",
-              "RelativeToolTip": "GUI\\FormAddProject.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAcwEsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T17:46:45.78Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TopicDAO.cs",
-              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DAO\\TopicDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\TopicDAO.cs",
-              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DAO\\TopicDAO.cs",
-              "RelativeToolTip": "DAO\\TopicDAO.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAkwGYAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T03:30:57.6Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "FormMain.cs",
               "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormMain.cs",
               "RelativeDocumentMoniker": "GUI\\FormMain.cs",
               "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormMain.cs",
               "RelativeToolTip": "GUI\\FormMain.cs",
-              "ViewState": "AgIAAIwAAAAAAAAAAAAtwJ0AAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAABECAAAAAAAAAAAAACQCAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T17:27:32.344Z",
+              "WhenOpened": "2024-11-28T13:33:16.624Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "loginDTO.cs",
+              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DTO\\loginDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\loginDTO.cs",
+              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DTO\\loginDTO.cs",
+              "RelativeToolTip": "DTO\\loginDTO.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAWwCoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T11:01:28.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClassDTO.cs",
+              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DTO\\ClassDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\ClassDTO.cs",
+              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DTO\\ClassDTO.cs",
+              "RelativeToolTip": "DTO\\ClassDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T14:20:13.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "FormAddProject.Designer.cs",
               "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormAddProject.Designer.cs",
               "RelativeDocumentMoniker": "GUI\\FormAddProject.Designer.cs",
@@ -214,80 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ClassDAO.cs",
-              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DAO\\ClassDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\ClassDAO.cs",
-              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DAO\\ClassDAO.cs",
-              "RelativeToolTip": "DAO\\ClassDAO.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAswHwAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T14:11:02.416Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FormAddStudents.cs [Design]",
-              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormAddStudents.cs",
-              "RelativeDocumentMoniker": "GUI\\FormAddStudents.cs",
-              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormAddStudents.cs [Design]",
-              "RelativeToolTip": "GUI\\FormAddStudents.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T17:47:51.509Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "studentDTO.cs",
-              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DTO\\studentDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\studentDTO.cs",
-              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DTO\\studentDTO.cs",
-              "RelativeToolTip": "DTO\\studentDTO.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwDEAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T16:44:37.411Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ClassDTO.cs",
-              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DTO\\ClassDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\ClassDTO.cs",
-              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DTO\\ClassDTO.cs",
-              "RelativeToolTip": "DTO\\ClassDTO.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAwAkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T14:20:13.846Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FormAddTeacher.cs [Design]",
-              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormAddTeacher.cs",
-              "RelativeDocumentMoniker": "GUI\\FormAddTeacher.cs",
-              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormAddTeacher.cs [Design]",
-              "RelativeToolTip": "GUI\\FormAddTeacher.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T09:26:08.118Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "FormMain.cs [Design]",
-              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormMain.cs",
-              "RelativeDocumentMoniker": "GUI\\FormMain.cs",
-              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormMain.cs [Design]",
-              "RelativeToolTip": "GUI\\FormMain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T16:01:33.832Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 6,
               "Title": "FormAddStudents.Designer.cs",
               "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormAddStudents.Designer.cs",
               "RelativeDocumentMoniker": "GUI\\FormAddStudents.Designer.cs",
@@ -300,19 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "loginDTO.cs",
-              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DTO\\loginDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\loginDTO.cs",
-              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DTO\\loginDTO.cs",
-              "RelativeToolTip": "DTO\\loginDTO.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAowBUAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T11:01:28.589Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -321,19 +136,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T12:21:32.44Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "FormMain.Designer.cs",
-              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormMain.Designer.cs",
-              "RelativeDocumentMoniker": "GUI\\FormMain.Designer.cs",
-              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormMain.Designer.cs",
-              "RelativeToolTip": "GUI\\FormMain.Designer.cs",
-              "ViewState": "AgIAACkBAAAAAAAAAAAcwDcBAACoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T14:46:38.734Z",
-              "EditorCaption": ""
             }
           ]
         },

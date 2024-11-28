@@ -17,6 +17,7 @@ namespace Oracle.GUI
 	{
 		private projectDTO project_dto;
 		private ValidateData validate;
+		private projectDTO project_needed;
 		public FormAddProject(projectDTO projectDTO)
 		{
 			InitializeComponent();
@@ -50,7 +51,7 @@ namespace Oracle.GUI
 			foreach (string tea in TeaList)
 				cbTeachers.Items.Add(tea);
 
-			if (project_dto== null)
+			if (project_dto.Id == null)
 			{
 				DataTable data = DAO.ProjectDAO.Instance.GetProjectsData();
 				projectDTO projectLast = new projectDTO(data.Rows[data.Rows.Count - 1]);
@@ -64,13 +65,86 @@ namespace Oracle.GUI
 				tbInputProjectID.Text = project_dto.Id;
 				tbInputProjectName.Text = project_dto.Name;
 
-				
+				DataTable dtTopic = DAO.TopicDAO.Instance.GetTopicID(project_dto.Id_topic);
+				topicDTO topic_here = new topicDTO(dtTopic.Rows[0]); 
+				cbTopicName.Text = topic_here.Name;
+
+				cbStudentByClass.Text = project_dto.Id_student;
+				cbTeachers.Text = project_dto.Id_teacher;
+				dtCreateProject.Value = project_dto.Create_at;
+				dtEndProject.Value = project_dto.Endtime;
+			}
+
+		}
+
+		private void checkError()
+		{
+			if (tbInputProjectName.Text.Trim() == "")
+			{
+				errorProvider.SetError(tbInputProjectName, "Tên đồ án không được để trống !");
+				return;
+			}
+			else
+			{
+				errorProvider.Clear();
 			}
 
 		}
 
 		private void btnSubmitAddProject_Click(object sender, EventArgs e)
 		{
+			checkError();
+			project_needed = new projectDTO();
+			project_needed.Id = tbInputProjectID.Text;
+			project_needed.Name = tbInputProjectName.Text;
+
+			DataTable dtTopic = DAO.TopicDAO.Instance.GetTopicName(cbTopicName.Text);
+			topicDTO topic = new topicDTO(dtTopic.Rows[0]);
+			project_needed.Id_topic = topic.Id;
+			
+			project_needed.Id_student = cbStudentByClass.Text;
+			project_needed.Id_teacher = cbTeachers.Text;
+
+			project_needed.Create_at = dtCreateProject.Value;
+			project_needed.Endtime = dtEndProject.Value;
+
+			DataTable dtPro = DAO.ProjectDAO.Instance.GetProjectID(project_needed.Id);
+			if(dtPro.Rows.Count ==0)
+			{
+				if (project_needed.Name != "")
+				{
+					if (DAO.ProjectDAO.Instance.InsertProject(project_needed))
+					{
+						MessageBox.Show("Thêm đồ án mã  " + project_needed.Id + "  thành công !");
+					}
+					else
+					{
+						MessageBox.Show("Thêm đồ án mã  thất bại !");
+					}
+				}
+				else
+				{
+					checkError();
+				}
+			}
+			else
+			{
+				if (project_needed.Name != "")
+				{
+					if (DAO.ProjectDAO.Instance.UpdateProject(project_needed))
+					{
+						MessageBox.Show("Cập nhật đồ án mã  " + project_needed.Id + "  thành công !");
+					}
+					else
+					{
+						MessageBox.Show("Cập nhật đồ án mã  thất bại !");
+					}
+				}
+				else
+				{
+					checkError();
+				}
+			}
 
 		}
 

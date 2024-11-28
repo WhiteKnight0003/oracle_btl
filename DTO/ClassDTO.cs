@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Oracle.DTO
 {
-	internal class ClassDTO
+	public class ClassDTO
 	{
 		private string id;
 		private string name;

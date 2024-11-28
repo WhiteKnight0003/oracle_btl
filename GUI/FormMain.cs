@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -41,6 +42,7 @@ namespace Oracle.GUI
 			pageListTeachersData();
 			pageListStudentsData();
 			pageListProjectData();
+			PageListAccountData();
 		}
 
 		private void Decentralization()
@@ -57,6 +59,7 @@ namespace Oracle.GUI
 				tcMenu.TabPages.Remove(PageListTeachers);
 				tcMenu.TabPages.Remove(PageProcessReport);
 				tcMenu.TabPages.Remove(PageProjectByStudents);
+				tcMenu.TabPages.Remove(PageListAccount);
 			}
 			else if (logindto.Powerfull == "Sinh viên")
 			{
@@ -64,6 +67,7 @@ namespace Oracle.GUI
 				tcMenu.TabPages.Remove(PageListStudents);
 				tcMenu.TabPages.Remove(PageProcessReport);
 				tcMenu.TabPages.Remove(PageProjectByStudents);
+				tcMenu.TabPages.Remove(PageListAccount);
 			}
 
 			lbUserLogin.Text = "Xin Chào  " + logindto.Name + "  ! ";
@@ -401,6 +405,227 @@ namespace Oracle.GUI
 			this.Hide();
 			faTeacher.ShowDialog();
 
+		}
+
+		private void btnModifyProject_Click(object sender, EventArgs e)
+		{
+			int index = DatagvListProjects.CurrentCell.RowIndex;
+			int res_ind = (currentPageProject - 1) * recordsPerPage + index;
+			projectDTO pro = new projectDTO(DAO.ProjectDAO.Instance.GetProjectsData().Rows[res_ind]);
+
+			faProject = new FormAddProject(pro);
+			this.Hide();
+			faProject.ShowDialog();
+		}
+
+		private void btnDeleteProject_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnViewProject_Click(object sender, EventArgs e)
+		{
+			int index = DatagvListProjects.CurrentCell.RowIndex;
+			int res_ind = (currentPageProject - 1) * recordsPerPage + index;
+			projectDTO pro = new projectDTO(DAO.ProjectDAO.Instance.GetProjectsData().Rows[res_ind]);
+
+			//faProject = new FormAddProject(pro);
+			//this.Hide();
+			//faProject.ShowDialog();
+		}
+
+
+		private void setupCbViewAccTea()
+		{
+			cbViewAcc.Items.Clear();
+			DataTable dttea = DAO.TeachersDAO.Instance.GetTeacherNotLogin();
+			if (dttea.Rows.Count > 0)
+			{
+				List<string> TeaList = dttea.AsEnumerable()
+					  .Select(row => row.Field<string>("ID"))
+					  .ToList();
+				foreach (string tea in TeaList)
+					cbViewAcc.Items.Add(tea);
+			}
+		}
+
+		private void setupCbViewAccStu()
+		{
+			cbViewAcc.Items.Clear();
+			DataTable dttea = DAO.StudentsDAO.Instance.GetStudentNotLogin();
+			if (dttea.Rows.Count > 0)
+			{
+				List<string> StuList = dttea.AsEnumerable()
+					  .Select(row => row.Field<string>("ID"))
+					  .ToList();
+				foreach (string stu in StuList)
+					cbViewAcc.Items.Add(stu);
+			}
+		}
+		private void setupPageAcc()
+		{
+			cbTypeAccount.Items.Clear();
+			cbTypeAccount.Items.Add("Giáo viên");
+			cbTypeAccount.Items.Add("Sinh viên");
+
+			datagvListAccount.DataSource = DAO.UserDAO.Instance.GetAccountDataWhile();
+
+			datagvListAccount.Columns[0].HeaderText = "Mã tài khoản";
+			datagvListAccount.Columns[1].HeaderText = "Tên đăng nhập";
+			datagvListAccount.Columns[2].HeaderText = "Mật khẩu";
+			datagvListAccount.Columns[3].HeaderText = "Tên đầy đủ";
+			datagvListAccount.Columns[4].HeaderText = "Chức vụ";
+			datagvListAccount.ColumnHeadersHeight = 30;
+			datagvListAccount.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+			cbFitterAcc.Items.Clear();
+			cbFitterAcc.Items.Add("Giáo viên");
+			cbFitterAcc.Items.Add("Sinh viên");
+		}
+		private void PageListAccountData()
+		{
+			TabPage PageListAccount = tcMenu.TabPages.Cast<TabPage>().FirstOrDefault(tab => tab.Name == "PageListAccount");
+			if(PageListAccount != null)
+			{
+				setupPageAcc();
+				setupCbViewAccTea();
+			}
+			
+		}
+
+		private void cbTypeAccount_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			if (cbTypeAccount.Text == "Giáo viên")
+			{				
+				setupCbViewAccTea();
+				cbTypeAccount.Text = "Giáo viên";
+				label1.Text = "Mã giáo viên";
+			}
+			else
+			{
+				setupCbViewAccStu();
+				cbTypeAccount.Text = "Sinh viên";
+				label1.Text = "Mã sinh viên";
+			}
+		}
+
+		private void btnAddAcc_Click(object sender, EventArgs e)
+		{
+			tbNameAcc.Text = "";
+			tbPasswordAcc.Text = "";
+			cbTypeAccount.Enabled = true;
+			cbViewAcc.Enabled = true;
+			tbNameAcc.Enabled = true;
+			tbPasswordAcc.Enabled = true;
+		}
+
+		private void btnModifyAcc_Click(object sender, EventArgs e)
+		{
+			tbNameAcc.Text = "";
+			tbPasswordAcc.Text = "";
+			tbNameAcc.Enabled = true;
+			tbPasswordAcc.Enabled = true;
+
+			int index = datagvListAccount.CurrentCell.RowIndex;
+			loginDTO log = new loginDTO(DAO.UserDAO.Instance.GetAccountDataWhile().Rows[index]);
+			cbTypeAccount.Text = log.Powerfull;
+			cbViewAcc.Text = log.Id;
+			tbNameAcc.Text = log.Username;
+			tbPasswordAcc.Text = log.Password;
+		}
+
+		private void btnDeleteAcc_Click(object sender, EventArgs e)
+		{
+			int index = datagvListAccount.CurrentCell.RowIndex;
+			loginDTO log = new loginDTO(DAO.UserDAO.Instance.GetAccountDataWhile().Rows[index]);
+			if (DAO.UserDAO.Instance.DropAcc(log.Id))
+			{
+				MessageBox.Show("Xóa tài khoản có mã " + log.Id + "  thành công !");
+			}
+			else
+			{
+				MessageBox.Show("Xóa tài khoản thất bại !");
+			}
+			setupPageAcc();
+		}
+
+		private void btnSaveAcc_Click(object sender, EventArgs e)
+		{
+			loginDTO login = new loginDTO();
+			login.Username = tbNameAcc.Text;
+			login.Password = tbPasswordAcc.Text;
+
+			if (cbTypeAccount.Text== "Giáo viên")
+			{
+				DataTable dtTea = DAO.TeachersDAO.Instance.GetTeacher(cbViewAcc.Text);
+				teachersDTO tea = new teachersDTO(dtTea.Rows[dtTea.Rows.Count - 1]);
+
+				login.Id = tea.Id;
+				login.Name = tea.Name;
+				login.Powerfull = cbTypeAccount.Text;
+				DataTable dtUser = DAO.UserDAO.Instance.GetAccID(login.Id);
+
+				if (dtUser.Rows.Count == 0)
+				{					
+					if (DAO.UserDAO.Instance.InsertAcc(login))
+					{
+						MessageBox.Show("Thêm tài khoản cho giáo viên có mã  " + tea.Id + "  Thành công !");
+					}
+					else
+					{
+						MessageBox.Show("Thêm tài khoản giáo viên thất bại !");
+					}
+					setupCbViewAccTea();
+				}
+				else
+				{
+					if (DAO.UserDAO.Instance.UpdateAcc(login))
+					{
+						MessageBox.Show("Cập nhật tài khoản cho giáo viên có mã  " + tea.Id + "  Thành công !");
+					}
+					else
+					{
+						MessageBox.Show("Cập nhật tài khoản giáo viên thất bại !");
+					}
+				}
+				
+			}
+			else
+			{
+				DataTable dtStu = DAO.StudentsDAO.Instance.GetStudent(cbViewAcc.Text);
+				studentDTO stu = new studentDTO(dtStu.Rows[dtStu.Rows.Count - 1]);
+
+				login.Id = stu.Id;
+				login.Name = stu.Name;
+				login.Powerfull = cbTypeAccount.Text;
+
+				DataTable dtUser = DAO.UserDAO.Instance.GetAccID(login.Id);
+				if (dtUser.Rows.Count == 0)
+				{
+					if (DAO.UserDAO.Instance.InsertAcc(login))
+					{
+						MessageBox.Show("Thêm tài khoản cho sinh viên có mã  " + stu.Id + "  Thành công !");
+					}
+					else
+					{
+						MessageBox.Show("Thêm tài khoản giáo viên thất bại !");
+					}
+					setupCbViewAccStu();
+				}
+				else
+				{
+					if (DAO.UserDAO.Instance.UpdateAcc(login))
+					{
+						MessageBox.Show("Cập nhật tài khoản cho giáo viên có mã  " + stu.Id + "  Thành công !");
+					}
+					else
+					{
+						MessageBox.Show("Cập nhật tài khoản giáo viên thất bại !");
+					}
+				}
+
+			}
+			setupPageAcc();
 		}
 	}
 }

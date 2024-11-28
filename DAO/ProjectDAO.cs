@@ -59,5 +59,136 @@ namespace Oracle.DAO
 				return null;
 			}
 		}
+
+		public bool InsertProject(projectDTO project)
+		{
+			try
+			{
+				using (OracleConnection connection = new OracleConnection(connectionStr))
+				{
+					connection.Open();
+
+					using (OracleCommand cmd = new OracleCommand("nhom01_oracle.SP_InsertProject", connection))
+					{
+						cmd.CommandType = CommandType.StoredProcedure;
+
+						// Add parameters
+						cmd.Parameters.Add("p_id", OracleDbType.Varchar2).Value = project.Id;
+						cmd.Parameters.Add("p_name", OracleDbType.Varchar2).Value = project.Name;
+						cmd.Parameters.Add("p_Id_topic", OracleDbType.Varchar2).Value = project.Id_topic;
+						cmd.Parameters.Add("p_Id_student", OracleDbType.Varchar2).Value = project.Id_student;
+						cmd.Parameters.Add("p_Id_teacher", OracleDbType.Varchar2).Value = project.Id_teacher;
+						cmd.Parameters.Add("p_createAt", OracleDbType.Date).Value = project.Create_at;
+						cmd.Parameters.Add("p_endtime", OracleDbType.Date).Value = project.Endtime;
+
+						// Execute the command
+						cmd.ExecuteNonQuery();
+						return true;
+					}
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Lỗi khi thêm đồ án : " + ex.Message);
+				return false;
+			}
+		}
+
+		public bool UpdateProject(projectDTO project)
+		{
+			try
+			{
+				using (OracleConnection connection = new OracleConnection(connectionStr))
+				{
+					connection.Open();
+
+					using (OracleCommand cmd = new OracleCommand("nhom01_oracle.SP_UpdateProject", connection))
+					{
+						cmd.CommandType = CommandType.StoredProcedure;
+
+						// Add parameters
+						cmd.Parameters.Add("p_id", OracleDbType.Varchar2).Value = project.Id;
+						cmd.Parameters.Add("p_name", OracleDbType.Varchar2).Value = project.Name;
+						cmd.Parameters.Add("p_Id_topic", OracleDbType.Varchar2).Value = project.Id_topic;
+						cmd.Parameters.Add("p_Id_student", OracleDbType.Varchar2).Value = project.Id_student;
+						cmd.Parameters.Add("p_Id_teacher", OracleDbType.Varchar2).Value = project.Id_teacher;
+						cmd.Parameters.Add("p_createAt", OracleDbType.Date).Value = project.Create_at;
+						cmd.Parameters.Add("p_endtime", OracleDbType.Date).Value = project.Endtime;
+
+
+						// Execute the command
+						cmd.ExecuteNonQuery();
+						return true;
+					}
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Lỗi khi cập nhật  đồ án : " + ex.Message);
+				return false;
+			}
+		}
+
+		public DataTable GetProjectName(string Name)
+		{
+			try
+			{
+				using (OracleConnection connection = new OracleConnection(connectionStr))
+				{
+					connection.Open();
+					// Sử dụng parameter để tránh SQL injection
+					string query = "SELECT * FROM Nhom01_Oracle.projects WHERE name = :Name";
+					using (OracleCommand cmd = new OracleCommand(query, connection))
+					{
+						cmd.CommandType = CommandType.Text;
+						// Thêm parameter
+						cmd.Parameters.Add(new OracleParameter("Name", Name));
+
+						DataTable dt = new DataTable();
+						using (OracleDataAdapter adapter = new OracleDataAdapter(cmd))
+						{
+							adapter.Fill(dt);
+						}
+						return dt;
+					}
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Lỗi kết nối: " + ex.Message);
+				return null;
+			}
+		}
+
+		public DataTable GetProjectID(string Id)
+		{
+			try
+			{
+				using (OracleConnection connection = new OracleConnection(connectionStr))
+				{
+					connection.Open();
+					// Sử dụng parameter để tránh SQL injection
+					string query = "SELECT * FROM Nhom01_Oracle.projects WHERE id = :Id";
+					using (OracleCommand cmd = new OracleCommand(query, connection))
+					{
+						cmd.CommandType = CommandType.Text;
+						// Thêm parameter
+						cmd.Parameters.Add(new OracleParameter("Id", Id));
+
+						DataTable dt = new DataTable();
+						using (OracleDataAdapter adapter = new OracleDataAdapter(cmd))
+						{
+							adapter.Fill(dt);
+						}
+						return dt;
+					}
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Lỗi kết nối: " + ex.Message);
+				return null;
+			}
+		}
 	}
 }

@@ -44,7 +44,7 @@ namespace Oracle.DTO
 			this.id_topic = row["id_topic"].ToString();
 			this.id_student = row["id_student"].ToString();
 			this.id_teacher = row["id_teacher"].ToString();
-			this.create_at = DateTime.Parse( row["create_at"].ToString());
+			this.create_at = DateTime.Parse( row["created_at"].ToString());
 			this.endtime =  DateTime.Parse(row["endtime"].ToString());
 		}
 	}

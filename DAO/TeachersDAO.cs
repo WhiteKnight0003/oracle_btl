@@ -177,7 +177,36 @@ namespace Oracle.DAO
 					{
 						cmd.CommandType = CommandType.Text;
 						// Thêm parameter
-						cmd.Parameters.Add(new OracleParameter("email", Id));
+						cmd.Parameters.Add(new OracleParameter("id", Id));
+
+						DataTable dt = new DataTable();
+						using (OracleDataAdapter adapter = new OracleDataAdapter(cmd))
+						{
+							adapter.Fill(dt);
+						}
+						return dt;
+					}
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Lỗi kết nối: " + ex.Message);
+				return null;
+			}
+		}
+
+		public DataTable GetTeacherNotLogin()
+		{
+			try
+			{
+				using (OracleConnection connection = new OracleConnection(connectionStr))
+				{
+					connection.Open();
+					// Sử dụng parameter để tránh SQL injection
+					string query = "SELECT * FROM nhom01_oracle.teachers WHERE ID NOT IN (SELECT ID FROM nhom01_oracle.login) and isactive =1 ORDER BY ID ASC";
+					using (OracleCommand cmd = new OracleCommand(query, connection))
+					{
+						cmd.CommandType = CommandType.Text;
 
 						DataTable dt = new DataTable();
 						using (OracleDataAdapter adapter = new OracleDataAdapter(cmd))
