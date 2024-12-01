@@ -25,7 +25,7 @@ namespace Oracle.DTO
 		{
 			this.Id = row["ID"].ToString();
 			this.Name = row["Name"].ToString();
-			this.Date = DateTime.Parse(row["Birthday"].ToString());
+			this.Date = DateTime.Parse(row["BIRTHDAY"].ToString());
 			this.Address = row["Address"].ToString();
 			this.Phone = row["Phone"].ToString();
 			this.Email = row["Email"].ToString();

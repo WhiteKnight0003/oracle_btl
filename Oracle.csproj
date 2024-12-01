@@ -98,13 +98,16 @@
   <ItemGroup>
     <Compile Include="DAO\ClassDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\DetailDAO.cs" />
     <Compile Include="DAO\ProjectDAO.cs" />
     <Compile Include="DAO\StudentsDAO.cs" />
     <Compile Include="DAO\TeachersDAO.cs" />
     <Compile Include="DAO\TopicDAO.cs" />
     <Compile Include="DAO\UserDAO.cs" />
     <Compile Include="DTO\ClassDTO.cs" />
+    <Compile Include="DTO\DetailsDTO.cs" />
     <Compile Include="DTO\loginDTO.cs" />
+    <Compile Include="DTO\processDTO.cs" />
     <Compile Include="DTO\projectDTO.cs" />
     <Compile Include="DTO\studentDTO.cs" />
     <Compile Include="DTO\teachersDTO.cs" />

@@ -10,7 +10,9 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Oracle.GUI
 {
@@ -19,6 +21,7 @@ namespace Oracle.GUI
 		private FormAddProject faProject;
 		private FormAddStudents faStudent;
 		private FormAddTeacher faTeacher;
+		private byte[] ContentWord;
 
 		private loginDTO logindto;
 		private int currentPageTeachers = 1; // Trang hiện tại
@@ -43,6 +46,7 @@ namespace Oracle.GUI
 			pageListStudentsData();
 			pageListProjectData();
 			PageListAccountData();
+			InfoProjectByStudent();
 		}
 
 		private void Decentralization()
@@ -53,6 +57,13 @@ namespace Oracle.GUI
 				tcMenu.TabPages.Remove(PageRemind);
 				tcMenu.TabPages.Remove(PageListStudentGuildByTeachers);
 				tcMenu.TabPages.Remove(PageProjectByStudents);
+				btnViewProject.Visible = true;
+				btnAddStudents.Visible = true;
+				btnModifyStudents.Visible = true;
+				btnDeleteStudents.Visible = true;
+				btnDeleteProject.Visible = true;
+				btnModifyProject.Visible = true;
+				btnAddProject.Visible = true;
 			}
 			else if(logindto.Powerfull == "Giáo viên")
 			{
@@ -60,14 +71,25 @@ namespace Oracle.GUI
 				tcMenu.TabPages.Remove(PageProcessReport);
 				tcMenu.TabPages.Remove(PageProjectByStudents);
 				tcMenu.TabPages.Remove(PageListAccount);
+				btnViewProject.Visible = true;
+				btnAddStudents.Visible = false;
+				btnModifyStudents.Visible = false;
+				btnDeleteStudents.Visible = false;
+				btnDeleteProject.Visible = false;
+				btnModifyProject.Visible = false;
+				btnAddProject.Visible = false;
 			}
 			else if (logindto.Powerfull == "Sinh viên")
 			{
 				tcMenu.TabPages.Remove(PageListTeachers);
 				tcMenu.TabPages.Remove(PageListStudents);
 				tcMenu.TabPages.Remove(PageProcessReport);
-				tcMenu.TabPages.Remove(PageProjectByStudents);
 				tcMenu.TabPages.Remove(PageListAccount);
+				tcMenu.TabPages.Remove(PageListStudentGuildByTeachers);
+				btnViewProject.Visible = false;
+				btnDeleteProject.Visible = false;
+				btnModifyProject.Visible = false;
+				btnAddProject.Visible = false;
 			}
 
 			lbUserLogin.Text = "Xin Chào  " + logindto.Name + "  ! ";
@@ -256,7 +278,8 @@ namespace Oracle.GUI
 					// Gán dữ liệu vào DataGridView
 					DatagvListProjects.DataSource = pageData;
 					DatagvListProjects.Columns[0].HeaderText = "Mã đồ án";
-					DatagvListProjects.Columns[1].HeaderText = "Họ và tên";
+					DatagvListProjects.Columns[1].HeaderText = "Tên đồ án";
+					
 					DatagvListProjects.Columns[2].HeaderText = "Mã chủ đề";
 					DatagvListProjects.Columns[3].HeaderText = "Mã sinh viên";
 					DatagvListProjects.Columns[4].HeaderText = "Mã giáo viên";
@@ -264,7 +287,6 @@ namespace Oracle.GUI
 					DatagvListProjects.Columns[6].HeaderText = "Hạn nộp";
 					DatagvListProjects.ColumnHeadersHeight = 30;
 					DatagvListProjects.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
 
 					totalPageProject = totalRecordsProject / recordsPerPage;
 					if (totalRecordsProject % recordsPerPage != 0)
@@ -626,6 +648,171 @@ namespace Oracle.GUI
 
 			}
 			setupPageAcc();
+		}
+
+		private void InfoProjectByStudent()
+		{
+			TabPage PageProjectByStudents = tcMenu.TabPages.Cast<TabPage>().FirstOrDefault(tab => tab.Name == "PageProjectByStudents");
+			if(PageProjectByStudents != null)
+			{
+				DataTable dataStu = DAO.StudentsDAO.Instance.GetStudent(logindto.Id);
+				studentDTO stuLogin = new studentDTO(dataStu.Rows[0]);
+
+				DataTable dataPro = DAO.ProjectDAO.Instance.GetProjectByIdStudent(stuLogin.Id);
+				projectDTO proLogin = new projectDTO(dataPro.Rows[0]);
+
+				DataTable dataClass = DAO.ClassDAO.Instance.GetClassID(stuLogin.Id_class);
+				ClassDTO classLogin = new ClassDTO(dataClass.Rows[0]);
+
+
+				DataTable datatea = DAO.TeachersDAO.Instance.GetTeacher(proLogin.Id_teacher);
+				teachersDTO teaLogin = new teachersDTO(datatea.Rows[0]);
+
+				DataTable dataDet = DAO.DetailDAO.Instance.GetProjectDetailsByIdProject(proLogin.Id);
+				DetailsDTO detailPro = new DetailsDTO(dataDet.Rows[0]);
+
+				lbNameStudent.Text = stuLogin.Name;
+				lbIDStudent.Text = stuLogin.Id;
+				lbIDProject.Text = proLogin.Id;
+				lbBirthdayStudent.Text = stuLogin.Birthday.ToString("dd/MM/yyyy");
+				lbClassStudent.Text = classLogin.Name;
+				lbCountryStudent.Text = stuLogin.Address;
+				lbSexStudent.Text = stuLogin.Sex;
+				lbNameTeacherGuide.Text = teaLogin.Name;
+				lbNameProjectByStu.Text = proLogin.Name;
+
+				if(detailPro.Filename == null)
+				{
+					lbStateByProject.Text = "Chưa hoàn thành ";
+					lbStateByProject.ForeColor = Color.Red;
+					lbViewFileName.Text = "";
+					lbDateCompleteProject.Text = "";
+				}
+				else
+				{
+					lbStateByProject.Text = "Đã hoàn thành ";
+					lbStateByProject.ForeColor = Color.Green;
+					lbViewFileName.Text = detailPro.Filename;
+					lbDateCompleteProject.Text = "Ngày nộp : ";
+					lbHideDateCompleteProject.Text = detailPro.Complete_date.ToString("dd/MM/yyyy");
+				}
+			}
+		}
+
+		private void btnLoadFile_Click(object sender, EventArgs e)
+		{
+			OpenFileDialog dlgOpen = new OpenFileDialog();
+			dlgOpen.Filter = "Word Documents (*.doc;*.docx)|*.doc;*.docx|All files (*.*)|*.*";
+			dlgOpen.Title = "Chọn tệp Word để mở";
+
+			if (dlgOpen.ShowDialog() == DialogResult.OK)
+			{
+				try
+				{
+					// Lấy đường dẫn đầy đủ của tệp
+					string fullPath = dlgOpen.FileName;
+
+					// Lấy tên tệp (không bao gồm đường dẫn)
+					string fileName = System.IO.Path.GetFileName(fullPath);
+
+					lbViewFileName.Text = fileName;
+
+					ContentWord = System.IO.File.ReadAllBytes(fullPath);
+				}
+				catch (Exception ex)
+				{
+					MessageBox.Show($"Có lỗi xảy ra: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				}
+			}
+			else
+			{
+				MessageBox.Show("Bạn đã hủy chọn tệp.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			}
+		}
+
+		private void btnSaveFile_Click(object sender, EventArgs e)
+		{
+			if (lbStateByProject != null)
+			{
+				DataTable dataStu = DAO.StudentsDAO.Instance.GetStudent(logindto.Id);
+				studentDTO stuLogin = new studentDTO(dataStu.Rows[0]);
+
+				DataTable dataPro = DAO.ProjectDAO.Instance.GetProjectByIdStudent(stuLogin.Id);
+				projectDTO proLogin = new projectDTO(dataPro.Rows[0]);
+
+				DataTable dataDet = DAO.DetailDAO.Instance.GetProjectDetailsByIdProject(proLogin.Id);
+				DetailsDTO detailPro = new DetailsDTO(dataDet.Rows[0]);
+
+				
+
+				string filename = detailPro.Filename;
+				DateTime time_comple = detailPro.Complete_date;
+				byte[] cont = detailPro.Content;
+				string id_process = detailPro.Id_process;
+
+
+				detailPro.Filename = lbViewFileName.Text;
+				detailPro.Complete_date = DateTime.Now;
+				detailPro.Content = ContentWord;
+				detailPro.Id_process = "PR02";
+
+				if (MessageBox.Show("Bạn có chắc chắn muốn lưu thay đổi này ?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+				{
+					if (DAO.DetailDAO.Instance.UpdateDetailsProject(detailPro))
+					{
+						MessageBox.Show("Cập nhật thành công !");
+					}
+					else
+					{
+						MessageBox.Show("Cập nhật thất bại !");
+					}
+				}
+				
+			}
+			else
+			{
+				MessageBox.Show("Bạn chưa chọn file để lưu !");
+			}
+		}
+
+		private void btnDeleteFile_Click(object sender, EventArgs e)
+		{
+			if (lbStateByProject != null)
+			{
+				DataTable dataStu = DAO.StudentsDAO.Instance.GetStudent(logindto.Id);
+				studentDTO stuLogin = new studentDTO(dataStu.Rows[0]);
+
+				DataTable dataPro = DAO.ProjectDAO.Instance.GetProjectByIdStudent(stuLogin.Id);
+				projectDTO proLogin = new projectDTO(dataPro.Rows[0]);
+
+				DataTable dataDet = DAO.DetailDAO.Instance.GetProjectDetailsByIdProject(proLogin.Id);
+				DetailsDTO detailPro = new DetailsDTO(dataDet.Rows[0]);
+
+
+				detailPro.Filename = "";
+				detailPro.Complete_date = DateTime.Now;
+				detailPro.Content = null;
+				detailPro.Id_process = "PR01";
+
+				if (MessageBox.Show("Bạn có chắc chắn muốn xóa file này ?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+				{
+					if (DAO.DetailDAO.Instance.UpdateDetailsProject(detailPro))
+					{
+						lbViewFileName.Text = "";
+						MessageBox.Show("Cập nhật thành công !");
+
+					}
+					else
+					{
+						MessageBox.Show("Cập nhật thất bại !");
+					}
+				}
+
+			}
+			else
+			{
+				MessageBox.Show("Không tồn tại file để xóa !");
+			}
 		}
 	}
 }

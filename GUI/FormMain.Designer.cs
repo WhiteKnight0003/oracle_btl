@@ -28,15 +28,15 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.tcMenu = new Guna.UI2.WinForms.Guna2TabControl();
 			this.Dashboard = new System.Windows.Forms.TabPage();
 			this.PageListTeachers = new System.Windows.Forms.TabPage();
@@ -86,9 +86,43 @@
 			this.PageRemind = new System.Windows.Forms.TabPage();
 			this.PageListStudentGuildByTeachers = new System.Windows.Forms.TabPage();
 			this.PageProjectByStudents = new System.Windows.Forms.TabPage();
+			this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+			this.guna2HtmlLabel26 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.lbViewFileName = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.btnDeleteFile = new Guna.UI2.WinForms.Guna2Button();
+			this.btnSaveFile = new Guna.UI2.WinForms.Guna2Button();
+			this.btnLoadFile = new Guna.UI2.WinForms.Guna2Button();
+			this.lbHideDateCompleteProject = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.lbStateByProject = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.lbDateCompleteProject = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.guna2HtmlLabel25 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.guna2HtmlLabel23 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.lbNameProjectByStu = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+			this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+			this.guna2HtmlLabel16 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.guna2HtmlLabel22 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.guna2HtmlLabel21 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.guna2HtmlLabel20 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.guna2HtmlLabel19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.lbNameTeacherGuide = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.lbClassStudent = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.lbCountryStudent = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.lbSexStudent = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.lbBirthdayStudent = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.lbIDProject = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.lbIDStudent = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.lbNameStudent = new Guna.UI2.WinForms.Guna2HtmlLabel();
 			this.PageListAccount = new System.Windows.Forms.TabPage();
 			this.btnDeleteAcc = new Guna.UI2.WinForms.Guna2Button();
 			this.btnModifyAcc = new Guna.UI2.WinForms.Guna2Button();
+			this.btnSaveAcc = new Guna.UI2.WinForms.Guna2Button();
 			this.btnAddAcc = new Guna.UI2.WinForms.Guna2Button();
 			this.datagvListAccount = new System.Windows.Forms.DataGridView();
 			this.tbPasswordAcc = new Guna.UI2.WinForms.Guna2TextBox();
@@ -103,7 +137,8 @@
 			this.cbTypeAccount = new System.Windows.Forms.ComboBox();
 			this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
 			this.lbUserLogin = new Guna.UI2.WinForms.Guna2HtmlLabel();
-			this.btnSaveAcc = new Guna.UI2.WinForms.Guna2Button();
+			this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+			this.lbNameProjectByStudent = new Guna.UI2.WinForms.Guna2HtmlLabel();
 			this.tcMenu.SuspendLayout();
 			this.PageListTeachers.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.DatagvListTeachers)).BeginInit();
@@ -111,6 +146,10 @@
 			((System.ComponentModel.ISupportInitialize)(this.DatagvListStudents)).BeginInit();
 			this.PageListProjects.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.DatagvListProjects)).BeginInit();
+			this.PageProjectByStudents.SuspendLayout();
+			this.guna2Panel3.SuspendLayout();
+			this.guna2Panel2.SuspendLayout();
+			this.guna2Panel4.SuspendLayout();
 			this.PageListAccount.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.datagvListAccount)).BeginInit();
 			this.guna2Panel1.SuspendLayout();
@@ -278,27 +317,27 @@
 			// 
 			// DatagvListTeachers
 			// 
-			dataGridViewCellStyle28.BackColor = System.Drawing.Color.White;
-			this.DatagvListTeachers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
+			dataGridViewCellStyle46.BackColor = System.Drawing.Color.White;
+			this.DatagvListTeachers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle46;
 			this.DatagvListTeachers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle29.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.DatagvListTeachers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
+			dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle47.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle47.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.DatagvListTeachers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle47;
 			this.DatagvListTeachers.ColumnHeadersHeight = 4;
 			this.DatagvListTeachers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle30.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.DatagvListTeachers.DefaultCellStyle = dataGridViewCellStyle30;
+			dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle48.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle48.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle48.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.DatagvListTeachers.DefaultCellStyle = dataGridViewCellStyle48;
 			this.DatagvListTeachers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
 			this.DatagvListTeachers.Location = new System.Drawing.Point(28, 120);
 			this.DatagvListTeachers.Name = "DatagvListTeachers";
@@ -570,27 +609,27 @@
 			// 
 			// DatagvListStudents
 			// 
-			dataGridViewCellStyle31.BackColor = System.Drawing.Color.White;
-			this.DatagvListStudents.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle31;
+			dataGridViewCellStyle49.BackColor = System.Drawing.Color.White;
+			this.DatagvListStudents.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle49;
 			this.DatagvListStudents.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle32.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.DatagvListStudents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
+			dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle50.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle50.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle50.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle50.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle50.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.DatagvListStudents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle50;
 			this.DatagvListStudents.ColumnHeadersHeight = 4;
 			this.DatagvListStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle33.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.DatagvListStudents.DefaultCellStyle = dataGridViewCellStyle33;
+			dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle51.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle51.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle51.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle51.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle51.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.DatagvListStudents.DefaultCellStyle = dataGridViewCellStyle51;
 			this.DatagvListStudents.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
 			this.DatagvListStudents.Location = new System.Drawing.Point(27, 118);
 			this.DatagvListStudents.Name = "DatagvListStudents";
@@ -831,27 +870,27 @@
 			// 
 			// DatagvListProjects
 			// 
-			dataGridViewCellStyle34.BackColor = System.Drawing.Color.White;
-			this.DatagvListProjects.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle34;
+			dataGridViewCellStyle52.BackColor = System.Drawing.Color.White;
+			this.DatagvListProjects.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle52;
 			this.DatagvListProjects.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle35.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle35.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.DatagvListProjects.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
+			dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle53.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle53.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle53.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle53.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle53.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.DatagvListProjects.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle53;
 			this.DatagvListProjects.ColumnHeadersHeight = 4;
 			this.DatagvListProjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle36.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.DatagvListProjects.DefaultCellStyle = dataGridViewCellStyle36;
+			dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle54.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle54.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle54.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle54.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle54.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.DatagvListProjects.DefaultCellStyle = dataGridViewCellStyle54;
 			this.DatagvListProjects.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
 			this.DatagvListProjects.Location = new System.Drawing.Point(25, 109);
 			this.DatagvListProjects.Name = "DatagvListProjects";
@@ -945,6 +984,8 @@
 			// 
 			// PageProjectByStudents
 			// 
+			this.PageProjectByStudents.Controls.Add(this.guna2Panel3);
+			this.PageProjectByStudents.Controls.Add(this.guna2Panel2);
 			this.PageProjectByStudents.Location = new System.Drawing.Point(224, 4);
 			this.PageProjectByStudents.Name = "PageProjectByStudents";
 			this.PageProjectByStudents.Padding = new System.Windows.Forms.Padding(3);
@@ -952,6 +993,389 @@
 			this.PageProjectByStudents.TabIndex = 7;
 			this.PageProjectByStudents.Text = "Đồ án thực hiện";
 			this.PageProjectByStudents.UseVisualStyleBackColor = true;
+			// 
+			// guna2Panel3
+			// 
+			this.guna2Panel3.Controls.Add(this.guna2HtmlLabel26);
+			this.guna2Panel3.Controls.Add(this.lbViewFileName);
+			this.guna2Panel3.Controls.Add(this.btnDeleteFile);
+			this.guna2Panel3.Controls.Add(this.btnSaveFile);
+			this.guna2Panel3.Controls.Add(this.btnLoadFile);
+			this.guna2Panel3.Controls.Add(this.lbHideDateCompleteProject);
+			this.guna2Panel3.Controls.Add(this.lbStateByProject);
+			this.guna2Panel3.Controls.Add(this.lbDateCompleteProject);
+			this.guna2Panel3.Controls.Add(this.guna2HtmlLabel25);
+			this.guna2Panel3.Controls.Add(this.guna2HtmlLabel23);
+			this.guna2Panel3.Controls.Add(this.lbNameProjectByStu);
+			this.guna2Panel3.Location = new System.Drawing.Point(355, 63);
+			this.guna2Panel3.Name = "guna2Panel3";
+			this.guna2Panel3.Size = new System.Drawing.Size(799, 733);
+			this.guna2Panel3.TabIndex = 0;
+			// 
+			// guna2HtmlLabel26
+			// 
+			this.guna2HtmlLabel26.BackColor = System.Drawing.Color.Transparent;
+			this.guna2HtmlLabel26.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
+			this.guna2HtmlLabel26.Location = new System.Drawing.Point(59, 217);
+			this.guna2HtmlLabel26.Name = "guna2HtmlLabel26";
+			this.guna2HtmlLabel26.Size = new System.Drawing.Size(142, 27);
+			this.guna2HtmlLabel26.TabIndex = 2;
+			this.guna2HtmlLabel26.Text = "Tệp đã chọn : ";
+			// 
+			// lbViewFileName
+			// 
+			this.lbViewFileName.BackColor = System.Drawing.Color.Transparent;
+			this.lbViewFileName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbViewFileName.Location = new System.Drawing.Point(230, 219);
+			this.lbViewFileName.Name = "lbViewFileName";
+			this.lbViewFileName.Size = new System.Drawing.Size(163, 25);
+			this.lbViewFileName.TabIndex = 2;
+			this.lbViewFileName.Text = "guna2HtmlLabel26";
+			// 
+			// btnDeleteFile
+			// 
+			this.btnDeleteFile.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnDeleteFile.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnDeleteFile.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnDeleteFile.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnDeleteFile.FillColor = System.Drawing.Color.Red;
+			this.btnDeleteFile.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnDeleteFile.ForeColor = System.Drawing.Color.Black;
+			this.btnDeleteFile.Location = new System.Drawing.Point(167, 350);
+			this.btnDeleteFile.Name = "btnDeleteFile";
+			this.btnDeleteFile.Size = new System.Drawing.Size(72, 45);
+			this.btnDeleteFile.TabIndex = 1;
+			this.btnDeleteFile.Text = "Xóa";
+			this.btnDeleteFile.Click += new System.EventHandler(this.btnDeleteFile_Click);
+			// 
+			// btnSaveFile
+			// 
+			this.btnSaveFile.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnSaveFile.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnSaveFile.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnSaveFile.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnSaveFile.FillColor = System.Drawing.Color.Yellow;
+			this.btnSaveFile.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSaveFile.ForeColor = System.Drawing.Color.Black;
+			this.btnSaveFile.Location = new System.Drawing.Point(59, 350);
+			this.btnSaveFile.Name = "btnSaveFile";
+			this.btnSaveFile.Size = new System.Drawing.Size(72, 45);
+			this.btnSaveFile.TabIndex = 1;
+			this.btnSaveFile.Text = "Lưu";
+			this.btnSaveFile.Click += new System.EventHandler(this.btnSaveFile_Click);
+			// 
+			// btnLoadFile
+			// 
+			this.btnLoadFile.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnLoadFile.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnLoadFile.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnLoadFile.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnLoadFile.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnLoadFile.ForeColor = System.Drawing.Color.White;
+			this.btnLoadFile.Location = new System.Drawing.Point(59, 274);
+			this.btnLoadFile.Name = "btnLoadFile";
+			this.btnLoadFile.Size = new System.Drawing.Size(180, 45);
+			this.btnLoadFile.TabIndex = 1;
+			this.btnLoadFile.Text = "Tải tệp lên ";
+			this.btnLoadFile.Click += new System.EventHandler(this.btnLoadFile_Click);
+			// 
+			// lbHideDateCompleteProject
+			// 
+			this.lbHideDateCompleteProject.AutoSize = false;
+			this.lbHideDateCompleteProject.BackColor = System.Drawing.Color.Transparent;
+			this.lbHideDateCompleteProject.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+			this.lbHideDateCompleteProject.Location = new System.Drawing.Point(278, 121);
+			this.lbHideDateCompleteProject.Name = "lbHideDateCompleteProject";
+			this.lbHideDateCompleteProject.Size = new System.Drawing.Size(368, 32);
+			this.lbHideDateCompleteProject.TabIndex = 0;
+			this.lbHideDateCompleteProject.Text = "Trạng thái : ";
+			// 
+			// lbStateByProject
+			// 
+			this.lbStateByProject.AutoSize = false;
+			this.lbStateByProject.BackColor = System.Drawing.Color.Transparent;
+			this.lbStateByProject.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+			this.lbStateByProject.Location = new System.Drawing.Point(277, 83);
+			this.lbStateByProject.Name = "lbStateByProject";
+			this.lbStateByProject.Size = new System.Drawing.Size(500, 32);
+			this.lbStateByProject.TabIndex = 0;
+			this.lbStateByProject.Text = "Trạng thái : ";
+			// 
+			// lbDateCompleteProject
+			// 
+			this.lbDateCompleteProject.AutoSize = false;
+			this.lbDateCompleteProject.BackColor = System.Drawing.Color.Transparent;
+			this.lbDateCompleteProject.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbDateCompleteProject.Location = new System.Drawing.Point(59, 121);
+			this.lbDateCompleteProject.Name = "lbDateCompleteProject";
+			this.lbDateCompleteProject.Size = new System.Drawing.Size(204, 32);
+			this.lbDateCompleteProject.TabIndex = 0;
+			this.lbDateCompleteProject.Text = "Ngày hoàn thành : ";
+			// 
+			// guna2HtmlLabel25
+			// 
+			this.guna2HtmlLabel25.AutoSize = false;
+			this.guna2HtmlLabel25.BackColor = System.Drawing.Color.Transparent;
+			this.guna2HtmlLabel25.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.guna2HtmlLabel25.Location = new System.Drawing.Point(59, 84);
+			this.guna2HtmlLabel25.Name = "guna2HtmlLabel25";
+			this.guna2HtmlLabel25.Size = new System.Drawing.Size(133, 32);
+			this.guna2HtmlLabel25.TabIndex = 0;
+			this.guna2HtmlLabel25.Text = "Trạng thái : ";
+			// 
+			// guna2HtmlLabel23
+			// 
+			this.guna2HtmlLabel23.AutoSize = false;
+			this.guna2HtmlLabel23.BackColor = System.Drawing.Color.Transparent;
+			this.guna2HtmlLabel23.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.guna2HtmlLabel23.Location = new System.Drawing.Point(59, 26);
+			this.guna2HtmlLabel23.Name = "guna2HtmlLabel23";
+			this.guna2HtmlLabel23.Size = new System.Drawing.Size(165, 36);
+			this.guna2HtmlLabel23.TabIndex = 0;
+			this.guna2HtmlLabel23.Text = "Tên đồ án : ";
+			// 
+			// lbNameProjectByStu
+			// 
+			this.lbNameProjectByStu.AutoSize = false;
+			this.lbNameProjectByStu.BackColor = System.Drawing.Color.Transparent;
+			this.lbNameProjectByStu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbNameProjectByStu.Location = new System.Drawing.Point(277, 29);
+			this.lbNameProjectByStu.Name = "lbNameProjectByStu";
+			this.lbNameProjectByStu.Size = new System.Drawing.Size(477, 36);
+			this.lbNameProjectByStu.TabIndex = 0;
+			this.lbNameProjectByStu.Text = "Họ tên : ";
+			// 
+			// guna2Panel2
+			// 
+			this.guna2Panel2.Controls.Add(this.guna2Panel4);
+			this.guna2Panel2.Controls.Add(this.panel1);
+			this.guna2Panel2.Controls.Add(this.guna2HtmlLabel22);
+			this.guna2Panel2.Controls.Add(this.guna2HtmlLabel21);
+			this.guna2Panel2.Controls.Add(this.guna2HtmlLabel20);
+			this.guna2Panel2.Controls.Add(this.guna2HtmlLabel19);
+			this.guna2Panel2.Controls.Add(this.guna2HtmlLabel18);
+			this.guna2Panel2.Controls.Add(this.guna2HtmlLabel15);
+			this.guna2Panel2.Controls.Add(this.guna2HtmlLabel14);
+			this.guna2Panel2.Controls.Add(this.guna2HtmlLabel13);
+			this.guna2Panel2.Controls.Add(this.lbNameTeacherGuide);
+			this.guna2Panel2.Controls.Add(this.lbClassStudent);
+			this.guna2Panel2.Controls.Add(this.lbCountryStudent);
+			this.guna2Panel2.Controls.Add(this.lbSexStudent);
+			this.guna2Panel2.Controls.Add(this.lbBirthdayStudent);
+			this.guna2Panel2.Controls.Add(this.lbIDProject);
+			this.guna2Panel2.Controls.Add(this.lbIDStudent);
+			this.guna2Panel2.Controls.Add(this.lbNameStudent);
+			this.guna2Panel2.Location = new System.Drawing.Point(50, 63);
+			this.guna2Panel2.Name = "guna2Panel2";
+			this.guna2Panel2.Size = new System.Drawing.Size(272, 513);
+			this.guna2Panel2.TabIndex = 0;
+			// 
+			// guna2Panel4
+			// 
+			this.guna2Panel4.Controls.Add(this.guna2HtmlLabel16);
+			this.guna2Panel4.Controls.Add(this.guna2HtmlLabel17);
+			this.guna2Panel4.Location = new System.Drawing.Point(373, 26);
+			this.guna2Panel4.Name = "guna2Panel4";
+			this.guna2Panel4.Size = new System.Drawing.Size(799, 710);
+			this.guna2Panel4.TabIndex = 0;
+			// 
+			// guna2HtmlLabel16
+			// 
+			this.guna2HtmlLabel16.AutoSize = false;
+			this.guna2HtmlLabel16.BackColor = System.Drawing.Color.Transparent;
+			this.guna2HtmlLabel16.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold);
+			this.guna2HtmlLabel16.Location = new System.Drawing.Point(184, 16);
+			this.guna2HtmlLabel16.Name = "guna2HtmlLabel16";
+			this.guna2HtmlLabel16.Size = new System.Drawing.Size(413, 36);
+			this.guna2HtmlLabel16.TabIndex = 0;
+			this.guna2HtmlLabel16.Text = "guna2HtmlLabel12";
+			// 
+			// guna2HtmlLabel17
+			// 
+			this.guna2HtmlLabel17.AutoSize = false;
+			this.guna2HtmlLabel17.BackColor = System.Drawing.Color.Transparent;
+			this.guna2HtmlLabel17.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.guna2HtmlLabel17.Location = new System.Drawing.Point(26, 16);
+			this.guna2HtmlLabel17.Name = "guna2HtmlLabel17";
+			this.guna2HtmlLabel17.Size = new System.Drawing.Size(152, 36);
+			this.guna2HtmlLabel17.TabIndex = 0;
+			this.guna2HtmlLabel17.Text = "Tên dự án  :";
+			// 
+			// panel1
+			// 
+			this.panel1.BackColor = System.Drawing.Color.Black;
+			this.panel1.Location = new System.Drawing.Point(0, 174);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(272, 2);
+			this.panel1.TabIndex = 1;
+			// 
+			// guna2HtmlLabel22
+			// 
+			this.guna2HtmlLabel22.AutoSize = false;
+			this.guna2HtmlLabel22.BackColor = System.Drawing.Color.Transparent;
+			this.guna2HtmlLabel22.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.guna2HtmlLabel22.Location = new System.Drawing.Point(13, 421);
+			this.guna2HtmlLabel22.Name = "guna2HtmlLabel22";
+			this.guna2HtmlLabel22.Size = new System.Drawing.Size(104, 49);
+			this.guna2HtmlLabel22.TabIndex = 0;
+			this.guna2HtmlLabel22.Text = "Giáo viên hướng dẫn : ";
+			// 
+			// guna2HtmlLabel21
+			// 
+			this.guna2HtmlLabel21.AutoSize = false;
+			this.guna2HtmlLabel21.BackColor = System.Drawing.Color.Transparent;
+			this.guna2HtmlLabel21.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.guna2HtmlLabel21.Location = new System.Drawing.Point(17, 372);
+			this.guna2HtmlLabel21.Name = "guna2HtmlLabel21";
+			this.guna2HtmlLabel21.Size = new System.Drawing.Size(90, 23);
+			this.guna2HtmlLabel21.TabIndex = 0;
+			this.guna2HtmlLabel21.Text = "Lớp : ";
+			// 
+			// guna2HtmlLabel20
+			// 
+			this.guna2HtmlLabel20.AutoSize = false;
+			this.guna2HtmlLabel20.BackColor = System.Drawing.Color.Transparent;
+			this.guna2HtmlLabel20.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.guna2HtmlLabel20.Location = new System.Drawing.Point(17, 311);
+			this.guna2HtmlLabel20.Name = "guna2HtmlLabel20";
+			this.guna2HtmlLabel20.Size = new System.Drawing.Size(90, 23);
+			this.guna2HtmlLabel20.TabIndex = 0;
+			this.guna2HtmlLabel20.Text = "Quê quán : ";
+			// 
+			// guna2HtmlLabel19
+			// 
+			this.guna2HtmlLabel19.AutoSize = false;
+			this.guna2HtmlLabel19.BackColor = System.Drawing.Color.Transparent;
+			this.guna2HtmlLabel19.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.guna2HtmlLabel19.Location = new System.Drawing.Point(17, 248);
+			this.guna2HtmlLabel19.Name = "guna2HtmlLabel19";
+			this.guna2HtmlLabel19.Size = new System.Drawing.Size(90, 23);
+			this.guna2HtmlLabel19.TabIndex = 0;
+			this.guna2HtmlLabel19.Text = "Giới tính : ";
+			// 
+			// guna2HtmlLabel18
+			// 
+			this.guna2HtmlLabel18.AutoSize = false;
+			this.guna2HtmlLabel18.BackColor = System.Drawing.Color.Transparent;
+			this.guna2HtmlLabel18.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.guna2HtmlLabel18.Location = new System.Drawing.Point(17, 192);
+			this.guna2HtmlLabel18.Name = "guna2HtmlLabel18";
+			this.guna2HtmlLabel18.Size = new System.Drawing.Size(90, 23);
+			this.guna2HtmlLabel18.TabIndex = 0;
+			this.guna2HtmlLabel18.Text = "Ngày sinh : ";
+			// 
+			// guna2HtmlLabel15
+			// 
+			this.guna2HtmlLabel15.AutoSize = false;
+			this.guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent;
+			this.guna2HtmlLabel15.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.guna2HtmlLabel15.Location = new System.Drawing.Point(17, 130);
+			this.guna2HtmlLabel15.Name = "guna2HtmlLabel15";
+			this.guna2HtmlLabel15.Size = new System.Drawing.Size(90, 23);
+			this.guna2HtmlLabel15.TabIndex = 0;
+			this.guna2HtmlLabel15.Text = "Mã đồ án : ";
+			// 
+			// guna2HtmlLabel14
+			// 
+			this.guna2HtmlLabel14.AutoSize = false;
+			this.guna2HtmlLabel14.BackColor = System.Drawing.Color.Transparent;
+			this.guna2HtmlLabel14.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.guna2HtmlLabel14.Location = new System.Drawing.Point(13, 69);
+			this.guna2HtmlLabel14.Name = "guna2HtmlLabel14";
+			this.guna2HtmlLabel14.Size = new System.Drawing.Size(108, 23);
+			this.guna2HtmlLabel14.TabIndex = 0;
+			this.guna2HtmlLabel14.Text = "Mã học viên : ";
+			// 
+			// guna2HtmlLabel13
+			// 
+			this.guna2HtmlLabel13.AutoSize = false;
+			this.guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent;
+			this.guna2HtmlLabel13.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.guna2HtmlLabel13.Location = new System.Drawing.Point(17, 16);
+			this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
+			this.guna2HtmlLabel13.Size = new System.Drawing.Size(79, 23);
+			this.guna2HtmlLabel13.TabIndex = 0;
+			this.guna2HtmlLabel13.Text = "Họ tên : ";
+			// 
+			// lbNameTeacherGuide
+			// 
+			this.lbNameTeacherGuide.AutoSize = false;
+			this.lbNameTeacherGuide.BackColor = System.Drawing.Color.Transparent;
+			this.lbNameTeacherGuide.Location = new System.Drawing.Point(127, 434);
+			this.lbNameTeacherGuide.Name = "lbNameTeacherGuide";
+			this.lbNameTeacherGuide.Size = new System.Drawing.Size(142, 23);
+			this.lbNameTeacherGuide.TabIndex = 0;
+			this.lbNameTeacherGuide.Text = "guna2HtmlLabel12";
+			// 
+			// lbClassStudent
+			// 
+			this.lbClassStudent.AutoSize = false;
+			this.lbClassStudent.BackColor = System.Drawing.Color.Transparent;
+			this.lbClassStudent.Location = new System.Drawing.Point(127, 372);
+			this.lbClassStudent.Name = "lbClassStudent";
+			this.lbClassStudent.Size = new System.Drawing.Size(142, 23);
+			this.lbClassStudent.TabIndex = 0;
+			this.lbClassStudent.Text = "guna2HtmlLabel12";
+			// 
+			// lbCountryStudent
+			// 
+			this.lbCountryStudent.AutoSize = false;
+			this.lbCountryStudent.BackColor = System.Drawing.Color.Transparent;
+			this.lbCountryStudent.Location = new System.Drawing.Point(127, 311);
+			this.lbCountryStudent.Name = "lbCountryStudent";
+			this.lbCountryStudent.Size = new System.Drawing.Size(142, 23);
+			this.lbCountryStudent.TabIndex = 0;
+			this.lbCountryStudent.Text = "guna2HtmlLabel12";
+			// 
+			// lbSexStudent
+			// 
+			this.lbSexStudent.AutoSize = false;
+			this.lbSexStudent.BackColor = System.Drawing.Color.Transparent;
+			this.lbSexStudent.Location = new System.Drawing.Point(127, 248);
+			this.lbSexStudent.Name = "lbSexStudent";
+			this.lbSexStudent.Size = new System.Drawing.Size(142, 23);
+			this.lbSexStudent.TabIndex = 0;
+			this.lbSexStudent.Text = "guna2HtmlLabel12";
+			// 
+			// lbBirthdayStudent
+			// 
+			this.lbBirthdayStudent.AutoSize = false;
+			this.lbBirthdayStudent.BackColor = System.Drawing.Color.Transparent;
+			this.lbBirthdayStudent.Location = new System.Drawing.Point(127, 192);
+			this.lbBirthdayStudent.Name = "lbBirthdayStudent";
+			this.lbBirthdayStudent.Size = new System.Drawing.Size(142, 23);
+			this.lbBirthdayStudent.TabIndex = 0;
+			this.lbBirthdayStudent.Text = "guna2HtmlLabel12";
+			// 
+			// lbIDProject
+			// 
+			this.lbIDProject.AutoSize = false;
+			this.lbIDProject.BackColor = System.Drawing.Color.Transparent;
+			this.lbIDProject.Location = new System.Drawing.Point(127, 130);
+			this.lbIDProject.Name = "lbIDProject";
+			this.lbIDProject.Size = new System.Drawing.Size(142, 23);
+			this.lbIDProject.TabIndex = 0;
+			this.lbIDProject.Text = "guna2HtmlLabel12";
+			// 
+			// lbIDStudent
+			// 
+			this.lbIDStudent.AutoSize = false;
+			this.lbIDStudent.BackColor = System.Drawing.Color.Transparent;
+			this.lbIDStudent.Location = new System.Drawing.Point(127, 69);
+			this.lbIDStudent.Name = "lbIDStudent";
+			this.lbIDStudent.Size = new System.Drawing.Size(142, 23);
+			this.lbIDStudent.TabIndex = 0;
+			this.lbIDStudent.Text = "guna2HtmlLabel12";
+			// 
+			// lbNameStudent
+			// 
+			this.lbNameStudent.AutoSize = false;
+			this.lbNameStudent.BackColor = System.Drawing.Color.Transparent;
+			this.lbNameStudent.Location = new System.Drawing.Point(127, 16);
+			this.lbNameStudent.Name = "lbNameStudent";
+			this.lbNameStudent.Size = new System.Drawing.Size(142, 23);
+			this.lbNameStudent.TabIndex = 0;
+			this.lbNameStudent.Text = "guna2HtmlLabel12";
 			// 
 			// PageListAccount
 			// 
@@ -1009,6 +1433,22 @@
 			this.btnModifyAcc.TabIndex = 36;
 			this.btnModifyAcc.Text = "Sửa";
 			this.btnModifyAcc.Click += new System.EventHandler(this.btnModifyAcc_Click);
+			// 
+			// btnSaveAcc
+			// 
+			this.btnSaveAcc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnSaveAcc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnSaveAcc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnSaveAcc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnSaveAcc.FillColor = System.Drawing.Color.Cyan;
+			this.btnSaveAcc.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSaveAcc.ForeColor = System.Drawing.Color.Black;
+			this.btnSaveAcc.Location = new System.Drawing.Point(811, 180);
+			this.btnSaveAcc.Name = "btnSaveAcc";
+			this.btnSaveAcc.Size = new System.Drawing.Size(83, 44);
+			this.btnSaveAcc.TabIndex = 38;
+			this.btnSaveAcc.Text = "Lưu";
+			this.btnSaveAcc.Click += new System.EventHandler(this.btnSaveAcc_Click);
 			// 
 			// btnAddAcc
 			// 
@@ -1178,21 +1618,27 @@
 			this.lbUserLogin.Text = "guna2HtmlLabel3";
 			this.lbUserLogin.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
-			// btnSaveAcc
+			// guna2HtmlLabel12
 			// 
-			this.btnSaveAcc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnSaveAcc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnSaveAcc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnSaveAcc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnSaveAcc.FillColor = System.Drawing.Color.Cyan;
-			this.btnSaveAcc.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnSaveAcc.ForeColor = System.Drawing.Color.Black;
-			this.btnSaveAcc.Location = new System.Drawing.Point(811, 180);
-			this.btnSaveAcc.Name = "btnSaveAcc";
-			this.btnSaveAcc.Size = new System.Drawing.Size(83, 44);
-			this.btnSaveAcc.TabIndex = 38;
-			this.btnSaveAcc.Text = "Lưu";
-			this.btnSaveAcc.Click += new System.EventHandler(this.btnSaveAcc_Click);
+			this.guna2HtmlLabel12.AutoSize = false;
+			this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
+			this.guna2HtmlLabel12.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.guna2HtmlLabel12.Location = new System.Drawing.Point(26, 16);
+			this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
+			this.guna2HtmlLabel12.Size = new System.Drawing.Size(152, 36);
+			this.guna2HtmlLabel12.TabIndex = 0;
+			this.guna2HtmlLabel12.Text = "Tên dự án  :";
+			// 
+			// lbNameProjectByStudent
+			// 
+			this.lbNameProjectByStudent.AutoSize = false;
+			this.lbNameProjectByStudent.BackColor = System.Drawing.Color.Transparent;
+			this.lbNameProjectByStudent.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold);
+			this.lbNameProjectByStudent.Location = new System.Drawing.Point(184, 16);
+			this.lbNameProjectByStudent.Name = "lbNameProjectByStudent";
+			this.lbNameProjectByStudent.Size = new System.Drawing.Size(413, 36);
+			this.lbNameProjectByStudent.TabIndex = 0;
+			this.lbNameProjectByStudent.Text = "guna2HtmlLabel12";
 			// 
 			// FormMain
 			// 
@@ -1215,6 +1661,11 @@
 			this.PageListProjects.ResumeLayout(false);
 			this.PageListProjects.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.DatagvListProjects)).EndInit();
+			this.PageProjectByStudents.ResumeLayout(false);
+			this.guna2Panel3.ResumeLayout(false);
+			this.guna2Panel3.PerformLayout();
+			this.guna2Panel2.ResumeLayout(false);
+			this.guna2Panel4.ResumeLayout(false);
 			this.PageListAccount.ResumeLayout(false);
 			this.PageListAccount.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.datagvListAccount)).EndInit();
@@ -1292,5 +1743,40 @@
 		private Guna.UI2.WinForms.Guna2TextBox tbPasswordAcc;
 		private System.Windows.Forms.Label label3;
 		private Guna.UI2.WinForms.Guna2Button btnSaveAcc;
+		private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+		private Guna.UI2.WinForms.Guna2HtmlLabel lbNameStudent;
+		private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
+		private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel15;
+		private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel14;
+		private Guna.UI2.WinForms.Guna2HtmlLabel lbIDProject;
+		private Guna.UI2.WinForms.Guna2HtmlLabel lbIDStudent;
+		private System.Windows.Forms.Panel panel1;
+		private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel22;
+		private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel21;
+		private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel20;
+		private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel19;
+		private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel18;
+		private Guna.UI2.WinForms.Guna2HtmlLabel lbNameTeacherGuide;
+		private Guna.UI2.WinForms.Guna2HtmlLabel lbClassStudent;
+		private Guna.UI2.WinForms.Guna2HtmlLabel lbCountryStudent;
+		private Guna.UI2.WinForms.Guna2HtmlLabel lbSexStudent;
+		private Guna.UI2.WinForms.Guna2HtmlLabel lbBirthdayStudent;
+		private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+		private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel25;
+		private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel23;
+		private Guna.UI2.WinForms.Guna2HtmlLabel lbNameProjectByStu;
+		private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+		private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel16;
+		private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel17;
+		private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
+		private Guna.UI2.WinForms.Guna2HtmlLabel lbNameProjectByStudent;
+		private Guna.UI2.WinForms.Guna2HtmlLabel lbStateByProject;
+		private Guna.UI2.WinForms.Guna2Button btnDeleteFile;
+		private Guna.UI2.WinForms.Guna2Button btnSaveFile;
+		private Guna.UI2.WinForms.Guna2Button btnLoadFile;
+		private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel26;
+		private Guna.UI2.WinForms.Guna2HtmlLabel lbViewFileName;
+		private Guna.UI2.WinForms.Guna2HtmlLabel lbHideDateCompleteProject;
+		private Guna.UI2.WinForms.Guna2HtmlLabel lbDateCompleteProject;
 	}
 }

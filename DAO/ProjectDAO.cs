@@ -190,5 +190,36 @@ namespace Oracle.DAO
 				return null;
 			}
 		}
+
+		public DataTable GetProjectByIdStudent(string Id_student)
+		{
+			try
+			{
+				using (OracleConnection connection = new OracleConnection(connectionStr))
+				{
+					connection.Open();
+					// Sử dụng parameter để tránh SQL injection
+					string query = "SELECT * FROM Nhom01_Oracle.projects WHERE ID_STUDENT = :id";
+					using (OracleCommand cmd = new OracleCommand(query, connection))
+					{
+						cmd.CommandType = CommandType.Text;
+						// Thêm parameter
+						cmd.Parameters.Add(new OracleParameter("id", Id_student));
+
+						DataTable dt = new DataTable();
+						using (OracleDataAdapter adapter = new OracleDataAdapter(cmd))
+						{
+							adapter.Fill(dt);
+						}
+						return dt;
+					}
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Lỗi kết nối: " + ex.Message);
+				return null;
+			}
+		}
 	}
 }
