@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\gui\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:gui\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|e:\\utc\\tl-gtvl-cua-toi\\n\u0103m 3 ki 1\\oracle\\oracle\\dao\\detaildao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:dao\\detaildao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|e:\\utc\\tl-gtvl-cua-toi\\n\u0103m 3 ki 1\\oracle\\oracle\\dao\\classdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:dao\\classdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|e:\\utc\\tl-gtvl-cua-toi\\n\u0103m 3 ki 1\\oracle\\oracle\\gui\\formmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:gui\\formmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|e:\\utc\\tl-gtvl-cua-toi\\n\u0103m 3 ki 1\\oracle\\oracle\\gui\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:gui\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|e:\\utc\\tl-gtvl-cua-toi\\n\u0103m 3 ki 1\\oracle\\oracle\\gui\\formaddproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:gui\\formaddproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|e:\\utc\\tl-gtvl-cua-toi\\n\u0103m 3 ki 1\\oracle\\oracle\\gui\\formaddproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:gui\\formaddproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|e:\\utc\\tl-gtvl-cua-toi\\n\u0103m 3 ki 1\\oracle\\oracle\\gui\\formviewproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:gui\\formviewproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|e:\\utc\\tl-gtvl-cua-toi\\n\u0103m 3 ki 1\\oracle\\oracle\\gui\\formviewproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A3E9B5F-6CA8-4CDD-BBED-CF2827D2A3A0}|Oracle.csproj|solutionrelative:gui\\formviewproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 196,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,80 +46,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormMain.Designer.cs",
-              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormMain.Designer.cs",
-              "RelativeDocumentMoniker": "GUI\\FormMain.Designer.cs",
-              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormMain.Designer.cs",
-              "RelativeToolTip": "GUI\\FormMain.Designer.cs",
-              "ViewState": "AgIAAGoGAAAAAAAAAAAvwGoGAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "FormAddProject.cs",
+              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormAddProject.cs",
+              "RelativeDocumentMoniker": "GUI\\FormAddProject.cs",
+              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormAddProject.cs",
+              "RelativeToolTip": "GUI\\FormAddProject.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T16:29:03.58Z",
+              "WhenOpened": "2024-12-02T10:31:16.111Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ClassDAO.cs",
-              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DAO\\ClassDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\ClassDAO.cs",
-              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DAO\\ClassDAO.cs",
-              "RelativeToolTip": "DAO\\ClassDAO.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Title": "FormAddProject.cs [Design]",
+              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormAddProject.cs",
+              "RelativeDocumentMoniker": "GUI\\FormAddProject.cs",
+              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormAddProject.cs [Design]",
+              "RelativeToolTip": "GUI\\FormAddProject.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T16:17:34.807Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T10:31:07.933Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DetailDAO.cs",
-              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DAO\\DetailDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\DetailDAO.cs",
-              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\DAO\\DetailDAO.cs",
-              "RelativeToolTip": "DAO\\DetailDAO.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAcwGAAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T16:17:27.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "FormMain.cs [Design]",
               "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormMain.cs",
               "RelativeDocumentMoniker": "GUI\\FormMain.cs",
               "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormMain.cs [Design]",
               "RelativeToolTip": "GUI\\FormMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T13:14:57.622Z",
+              "WhenOpened": "2024-12-02T10:26:32.372Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "FormViewProject.cs",
+              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormViewProject.cs",
+              "RelativeDocumentMoniker": "GUI\\FormViewProject.cs",
+              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormViewProject.cs",
+              "RelativeToolTip": "GUI\\FormViewProject.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T10:23:16.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "FormMain.cs",
               "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormMain.cs",
               "RelativeDocumentMoniker": "GUI\\FormMain.cs",
               "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormMain.cs",
               "RelativeToolTip": "GUI\\FormMain.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAuwEEAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAYwFAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T13:33:16.624Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAADAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "FormViewProject.cs [Design]",
+              "DocumentMoniker": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormViewProject.cs",
+              "RelativeDocumentMoniker": "GUI\\FormViewProject.cs",
+              "ToolTip": "E:\\UTC\\TL-GTVL-CUA-TOI\\N\u0103m 3 ki 1\\Oracle\\Oracle\\GUI\\FormViewProject.cs [Design]",
+              "RelativeToolTip": "GUI\\FormViewProject.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:21:32.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T03:36:27.69Z",
+              "EditorCaption": " [Design]"
             }
           ]
         },

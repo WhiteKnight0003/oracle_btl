@@ -254,5 +254,36 @@ namespace Oracle.DAO
 				return null;
 			}
 		}
+
+		public DataTable GetStudentByTeacherID(string TeaId)
+		{
+			try
+			{
+				using (OracleConnection connection = new OracleConnection(connectionStr))
+				{
+					connection.Open();
+					// Sử dụng parameter để tránh SQL injection
+					string query = "select s.* from nhom01_oracle.students s join nhom01_oracle.projects p on s.id = p.id_student  where p.id_teacher =  :id";
+					using (OracleCommand cmd = new OracleCommand(query, connection))
+					{
+						cmd.CommandType = CommandType.Text;
+						// Thêm parameter
+						cmd.Parameters.Add(new OracleParameter("id", TeaId));
+
+						DataTable dt = new DataTable();
+						using (OracleDataAdapter adapter = new OracleDataAdapter(cmd))
+						{
+							adapter.Fill(dt);
+						}
+						return dt;
+					}
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Lỗi kết nối: " + ex.Message);
+				return null;
+			}
+		}
 	}
 }

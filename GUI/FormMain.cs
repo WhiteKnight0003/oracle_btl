@@ -4,8 +4,10 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -21,6 +23,8 @@ namespace Oracle.GUI
 		private FormAddProject faProject;
 		private FormAddStudents faStudent;
 		private FormAddTeacher faTeacher;
+		private FormViewProject fviewProject;
+		private FormLogin fLogin;
 		private byte[] ContentWord;
 
 		private loginDTO logindto;
@@ -37,6 +41,10 @@ namespace Oracle.GUI
 		private int totalRecordsProject = 0; // Tổng số bản ghi
 		private int totalPageProject = 0;
 
+		private int currentPageStudentsByTea = 1; // Trang hiện tại
+		private int totalRecordsStudentsByTea = 0; // Tổng số bản ghi
+		private int totalPageStudentsByTea = 0;
+
 		public FormMain(loginDTO loginDTO)
 		{
 			InitializeComponent();
@@ -47,6 +55,7 @@ namespace Oracle.GUI
 			pageListProjectData();
 			PageListAccountData();
 			InfoProjectByStudent();
+			pageListStudentsByTeacherData();
 		}
 
 		private void Decentralization()
@@ -54,10 +63,8 @@ namespace Oracle.GUI
 			MessageBox.Show(logindto.Powerfull);
 			if(logindto.Powerfull == "Trưởng khoa")
 			{
-				tcMenu.TabPages.Remove(PageRemind);
 				tcMenu.TabPages.Remove(PageListStudentGuildByTeachers);
 				tcMenu.TabPages.Remove(PageProjectByStudents);
-				btnViewProject.Visible = true;
 				btnAddStudents.Visible = true;
 				btnModifyStudents.Visible = true;
 				btnDeleteStudents.Visible = true;
@@ -68,10 +75,8 @@ namespace Oracle.GUI
 			else if(logindto.Powerfull == "Giáo viên")
 			{
 				tcMenu.TabPages.Remove(PageListTeachers);
-				tcMenu.TabPages.Remove(PageProcessReport);
 				tcMenu.TabPages.Remove(PageProjectByStudents);
 				tcMenu.TabPages.Remove(PageListAccount);
-				btnViewProject.Visible = true;
 				btnAddStudents.Visible = false;
 				btnModifyStudents.Visible = false;
 				btnDeleteStudents.Visible = false;
@@ -83,10 +88,8 @@ namespace Oracle.GUI
 			{
 				tcMenu.TabPages.Remove(PageListTeachers);
 				tcMenu.TabPages.Remove(PageListStudents);
-				tcMenu.TabPages.Remove(PageProcessReport);
 				tcMenu.TabPages.Remove(PageListAccount);
 				tcMenu.TabPages.Remove(PageListStudentGuildByTeachers);
-				btnViewProject.Visible = false;
 				btnDeleteProject.Visible = false;
 				btnModifyProject.Visible = false;
 				btnAddProject.Visible = false;
@@ -98,9 +101,11 @@ namespace Oracle.GUI
 		// danh sách giáo viên 
 		private void pageListTeachersData()
 		{
+
 			TabPage PageListTeachers = tcMenu.TabPages.Cast<TabPage>().FirstOrDefault(tab => tab.Name == "PageListTeachers");
 			if (PageListTeachers != null)
 			{
+
 				// view Info table
 				DataTable data = DAO.TeachersDAO.Instance.GetTeachersData();
 				if(data.Rows.Count >0)
@@ -152,6 +157,7 @@ namespace Oracle.GUI
 						btnPageAfterTea.Visible = true;
 					}
 				}
+				DatagvListTeachers.ClearSelection();
 			}
 		}
 
@@ -232,6 +238,7 @@ namespace Oracle.GUI
 
 					}
 				}
+				DatagvListStudents.ClearSelection();
 			}
 		}
 
@@ -313,7 +320,7 @@ namespace Oracle.GUI
 						btnPageAfterPro.Visible = true;
 					}
 				}
-				
+				DatagvListProjects.ClearSelection();
 			}
 		}
 		private void btnPageAfterPro_Click(object sender, EventArgs e)
@@ -342,16 +349,16 @@ namespace Oracle.GUI
 
 		private void btnAddTeachers_Click(object sender, EventArgs e)
 		{
-			teachersDTO tea = new teachersDTO();
-			faTeacher = new FormAddTeacher(tea);
+			teachersDTO teaAdd = new teachersDTO();
+			faTeacher = new FormAddTeacher(teaAdd);
 			this.Hide();
 			faTeacher.ShowDialog();
 		}
 
 		private void btnAddStudents_Click(object sender, EventArgs e)
 		{
-			studentDTO stu = new studentDTO();
-			faStudent  = new FormAddStudents(stu);
+			studentDTO stuAdd = new studentDTO();
+			faStudent  = new FormAddStudents(stuAdd);
 			this.Hide();
 			faStudent.ShowDialog();
 		}
@@ -659,7 +666,7 @@ namespace Oracle.GUI
 				studentDTO stuLogin = new studentDTO(dataStu.Rows[0]);
 
 				DataTable dataPro = DAO.ProjectDAO.Instance.GetProjectByIdStudent(stuLogin.Id);
-				projectDTO proLogin = new projectDTO(dataPro.Rows[0]);
+				projectDTO proLogin = new projectDTO(dataPro.Rows[dataPro.Rows.Count-1]);
 
 				DataTable dataClass = DAO.ClassDAO.Instance.GetClassID(stuLogin.Id_class);
 				ClassDTO classLogin = new ClassDTO(dataClass.Rows[0]);
@@ -681,12 +688,13 @@ namespace Oracle.GUI
 				lbNameTeacherGuide.Text = teaLogin.Name;
 				lbNameProjectByStu.Text = proLogin.Name;
 
-				if(detailPro.Filename == null)
+				if(detailPro.Filename == "")
 				{
 					lbStateByProject.Text = "Chưa hoàn thành ";
 					lbStateByProject.ForeColor = Color.Red;
 					lbViewFileName.Text = "";
 					lbDateCompleteProject.Text = "";
+					btnViewFile.Visible = false;
 				}
 				else
 				{
@@ -695,6 +703,7 @@ namespace Oracle.GUI
 					lbViewFileName.Text = detailPro.Filename;
 					lbDateCompleteProject.Text = "Ngày nộp : ";
 					lbHideDateCompleteProject.Text = detailPro.Complete_date.ToString("dd/MM/yyyy");
+					btnViewFile.Visible = true;
 				}
 			}
 		}
@@ -813,6 +822,104 @@ namespace Oracle.GUI
 			{
 				MessageBox.Show("Không tồn tại file để xóa !");
 			}
+		}
+
+		private void btnViewFile_Click(object sender, EventArgs e)
+		{
+			DataTable dataStu = DAO.StudentsDAO.Instance.GetStudent(logindto.Id);
+			studentDTO stuLogin = new studentDTO(dataStu.Rows[0]);
+
+			DataTable dataPro = DAO.ProjectDAO.Instance.GetProjectByIdStudent(stuLogin.Id);
+			projectDTO proLogin = new projectDTO(dataPro.Rows[0]);
+
+			DataTable dataDet = DAO.DetailDAO.Instance.GetProjectDetailsByIdProject(proLogin.Id);
+			DetailsDTO detailPro = new DetailsDTO(dataDet.Rows[0]);
+
+			byte[] dataWord = detailPro.Content;
+			// Tạo file tạm 
+			string tempFilePath = Path.GetTempFileName() + ".docx";
+			File.WriteAllBytes(tempFilePath, dataWord);
+
+			// Mở file
+			System.Diagnostics.Process.Start(tempFilePath);
+		}
+
+		private void pageListStudentsByTeacherData()
+		{
+			TabPage PageListStudentGuildByTeachers = tcMenu.TabPages.Cast<TabPage>().FirstOrDefault(tab => tab.Name == "PageListStudentGuildByTeachers");
+			if (PageListStudentGuildByTeachers != null)
+			{
+				// view Info table
+				DataTable data = DAO.StudentsDAO.Instance.GetStudentByTeacherID(logindto.Id);
+				if (data.Rows.Count > 0)
+				{
+					totalRecordsStudentsByTea = data.Rows.Count;
+
+					// Lấy dữ liệu cho trang hiện tại
+					var pageDataStuByTea = data.AsEnumerable()
+									 .Skip((currentPageStudentsByTea - 1) * recordsPerPage)
+									 .Take(recordsPerPage)
+									 .CopyToDataTable();
+
+					// Gán dữ liệu vào DataGridView
+					datagvListStudentbyTeacher.DataSource = pageDataStuByTea;
+					datagvListStudentbyTeacher.Columns[0].HeaderText = "Mã sinh viên";
+					datagvListStudentbyTeacher.Columns[1].HeaderText = "Họ và tên";
+					datagvListStudentbyTeacher.Columns[2].HeaderText = "Mã lớp";
+					datagvListStudentbyTeacher.Columns[3].HeaderText = "Ngày sinh";
+					datagvListStudentbyTeacher.Columns[4].HeaderText = "Quê quán";
+					datagvListStudentbyTeacher.Columns[5].HeaderText = "Số điện thoại";
+					datagvListStudentbyTeacher.Columns[6].HeaderText = "Email";
+					datagvListStudentbyTeacher.Columns[7].HeaderText = "Giới tính";
+					datagvListStudentbyTeacher.Columns[8].Visible = false;
+					datagvListStudentbyTeacher.ColumnHeadersHeight = 30;
+					datagvListStudentbyTeacher.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+
+					totalPageStudentsByTea = totalRecordsStudentsByTea / recordsPerPage;
+					if (totalRecordsStudentsByTea % recordsPerPage != 0)
+					{
+						totalPageStudentsByTea += 1;
+					}
+					lbViewTotalPageStuByTea.Text = totalPageStudentsByTea.ToString();
+					lbViewCurrentPageStuByTea.Text = currentPageStudentsByTea.ToString();
+					btnPageCurrentStuByTea.Text = currentPageStudentsByTea.ToString();
+
+					if (currentPageStudentsByTea == 1)
+					{
+						btnPageBeforeStuByTea.Visible = false;
+						btnPageAfterStuByTea.Visible = true;
+					}
+					else if (currentPageStudentsByTea == totalPageStudentsByTea)
+					{
+						btnPageBeforeStuByTea.Visible = true;
+						btnPageAfterStuByTea.Visible = false;
+					}
+					else
+					{
+						btnPageBeforeStuByTea.Visible = true;
+						btnPageAfterStuByTea.Visible = true;
+
+					}
+				}
+			}
+		}
+
+		private void btnViewInfoStudent_Click(object sender, EventArgs e)
+		{
+			int index = datagvListStudentbyTeacher.CurrentCell.RowIndex;
+			int res_ind = (currentPageStudentsByTea - 1) * recordsPerPage + index;
+			studentDTO stu = new studentDTO(DAO.StudentsDAO.Instance.GetStudentByTeacherID(logindto.Id).Rows[res_ind]);
+			fviewProject = new FormViewProject(stu);
+			this.Hide();
+			fviewProject.ShowDialog();
+		}
+
+		private void btnLogOut_Click(object sender, EventArgs e)
+		{
+			fLogin = new FormLogin();
+			this.Hide();
+			fLogin.Show();
 		}
 	}
 }

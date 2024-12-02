@@ -32,7 +32,7 @@ namespace Oracle.GUI
 		#region methods
 		private void LoadInputId()
 		{
-			if(teacher_dto == null)
+			if(teacher_dto.Id == null)
 			{
 				DataTable data = DAO.TeachersDAO.Instance.GetTeachersData();
 				teachersDTO teacherLast = new teachersDTO(data.Rows[data.Rows.Count - 1]);

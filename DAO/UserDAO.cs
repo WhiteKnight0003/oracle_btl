@@ -206,7 +206,7 @@ namespace Oracle.DAO
 
 						// Add parameters
 						cmd.Parameters.Add("p_id", OracleDbType.Varchar2).Value = login.Id;
-						cmd.Parameters.Add("p_username", OracleDbType.Varchar2).Value = login.Name;
+						cmd.Parameters.Add("p_username", OracleDbType.Varchar2).Value = login.Username;
 						cmd.Parameters.Add("p_password", OracleDbType.Varchar2).Value = login.Password;
 						cmd.Parameters.Add("p_name", OracleDbType.Varchar2).Value = login.Name;
 						cmd.Parameters.Add("p_powerful", OracleDbType.Varchar2).Value = login.Powerfull;

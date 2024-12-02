@@ -36,7 +36,7 @@ namespace Oracle.GUI
 			foreach (string Class in ClassList)
 				cbClassID.Items.Add(Class);
 
-			if (student_dto == null)
+			if (student_dto.Id == null)
 			{
 				DataTable data = DAO.StudentsDAO.Instance.GetStudentData();
 				studentDTO studentLast = new studentDTO(data.Rows[data.Rows.Count - 1]);

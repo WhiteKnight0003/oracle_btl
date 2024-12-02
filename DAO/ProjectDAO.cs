@@ -68,7 +68,7 @@ namespace Oracle.DAO
 				{
 					connection.Open();
 
-					using (OracleCommand cmd = new OracleCommand("nhom01_oracle.SP_InsertProject", connection))
+					using (OracleCommand cmd = new OracleCommand("NHOM01_ORACLE.SP_InsertProject", connection))
 					{
 						cmd.CommandType = CommandType.StoredProcedure;
 
@@ -80,7 +80,6 @@ namespace Oracle.DAO
 						cmd.Parameters.Add("p_Id_teacher", OracleDbType.Varchar2).Value = project.Id_teacher;
 						cmd.Parameters.Add("p_createAt", OracleDbType.Date).Value = project.Create_at;
 						cmd.Parameters.Add("p_endtime", OracleDbType.Date).Value = project.Endtime;
-
 						// Execute the command
 						cmd.ExecuteNonQuery();
 						return true;
@@ -114,7 +113,6 @@ namespace Oracle.DAO
 						cmd.Parameters.Add("p_Id_teacher", OracleDbType.Varchar2).Value = project.Id_teacher;
 						cmd.Parameters.Add("p_createAt", OracleDbType.Date).Value = project.Create_at;
 						cmd.Parameters.Add("p_endtime", OracleDbType.Date).Value = project.Endtime;
-
 
 						// Execute the command
 						cmd.ExecuteNonQuery();
