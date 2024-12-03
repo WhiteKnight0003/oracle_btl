@@ -48,6 +48,7 @@
 			this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
 			this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
 			this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+			this.btnBackProject = new Guna.UI2.WinForms.Guna2Button();
 			this.guna2Panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
 			this.SuspendLayout();
@@ -99,7 +100,7 @@
 			this.guna2Panel1.Controls.Add(this.guna2HtmlLabel4);
 			this.guna2Panel1.Controls.Add(this.guna2HtmlLabel3);
 			this.guna2Panel1.Controls.Add(this.guna2HtmlLabel2);
-			this.guna2Panel1.Location = new System.Drawing.Point(22, 42);
+			this.guna2Panel1.Location = new System.Drawing.Point(25, 62);
 			this.guna2Panel1.Name = "guna2Panel1";
 			this.guna2Panel1.Size = new System.Drawing.Size(701, 341);
 			this.guna2Panel1.TabIndex = 10;
@@ -272,7 +273,7 @@
 			// 
 			this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
 			this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.guna2HtmlLabel1.Location = new System.Drawing.Point(25, 12);
+			this.guna2HtmlLabel1.Location = new System.Drawing.Point(89, 26);
 			this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
 			this.guna2HtmlLabel1.Size = new System.Drawing.Size(104, 25);
 			this.guna2HtmlLabel1.TabIndex = 9;
@@ -282,11 +283,29 @@
 			// 
 			this.errorProvider.ContainerControl = this;
 			// 
+			// btnBackProject
+			// 
+			this.btnBackProject.BackgroundImage = global::Oracle.Properties.Resources.icons8_left_100;
+			this.btnBackProject.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.btnBackProject.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnBackProject.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnBackProject.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnBackProject.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnBackProject.FillColor = System.Drawing.Color.Transparent;
+			this.btnBackProject.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.btnBackProject.ForeColor = System.Drawing.Color.White;
+			this.btnBackProject.Location = new System.Drawing.Point(25, 15);
+			this.btnBackProject.Name = "btnBackProject";
+			this.btnBackProject.Size = new System.Drawing.Size(51, 36);
+			this.btnBackProject.TabIndex = 13;
+			this.btnBackProject.Click += new System.EventHandler(this.btnBackProject_Click);
+			// 
 			// FormAddProject
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 503);
+			this.Controls.Add(this.btnBackProject);
 			this.Controls.Add(this.btnSubmitRefreshProject);
 			this.Controls.Add(this.btnSubmitAddProject);
 			this.Controls.Add(this.guna2Panel1);
@@ -323,5 +342,6 @@
 		private System.Windows.Forms.ComboBox cbTeachers;
 		private System.Windows.Forms.ComboBox cbStudentByClass;
 		private System.Windows.Forms.ErrorProvider errorProvider;
+		private Guna.UI2.WinForms.Guna2Button btnBackProject;
 	}
 }

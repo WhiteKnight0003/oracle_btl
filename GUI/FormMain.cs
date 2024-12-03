@@ -60,7 +60,6 @@ namespace Oracle.GUI
 
 		private void Decentralization()
 		{
-			MessageBox.Show(logindto.Powerfull);
 			if(logindto.Powerfull == "Trưởng khoa")
 			{
 				tcMenu.TabPages.Remove(PageListStudentGuildByTeachers);
@@ -350,7 +349,7 @@ namespace Oracle.GUI
 		private void btnAddTeachers_Click(object sender, EventArgs e)
 		{
 			teachersDTO teaAdd = new teachersDTO();
-			faTeacher = new FormAddTeacher(teaAdd);
+			faTeacher = new FormAddTeacher(teaAdd, logindto);
 			this.Hide();
 			faTeacher.ShowDialog();
 		}
@@ -358,7 +357,7 @@ namespace Oracle.GUI
 		private void btnAddStudents_Click(object sender, EventArgs e)
 		{
 			studentDTO stuAdd = new studentDTO();
-			faStudent  = new FormAddStudents(stuAdd);
+			faStudent  = new FormAddStudents(stuAdd, logindto);
 			this.Hide();
 			faStudent.ShowDialog();
 		}
@@ -366,7 +365,7 @@ namespace Oracle.GUI
 		private void btnAddProject_Click(object sender, EventArgs e)
 		{
 			projectDTO pro = new projectDTO();
-			faProject = new FormAddProject(pro);
+			faProject = new FormAddProject(pro, logindto);
 			this.Hide();
 			faProject.ShowDialog();
 		}
@@ -419,7 +418,7 @@ namespace Oracle.GUI
 			int res_ind = (currentPageStudents - 1) * recordsPerPage + index;
 			studentDTO stu = new studentDTO(DAO.StudentsDAO.Instance.GetStudentData().Rows[res_ind]);
 
-			faStudent = new FormAddStudents(stu);
+			faStudent = new FormAddStudents(stu, logindto);
 			this.Hide();
 			faStudent.ShowDialog();
 		}
@@ -430,7 +429,7 @@ namespace Oracle.GUI
 			int res_ind = (currentPageTeachers - 1) * recordsPerPage + index;
 			teachersDTO tea = new teachersDTO(DAO.TeachersDAO.Instance.GetTeachersData().Rows[res_ind]);
 			
-			faTeacher = new FormAddTeacher(tea);
+			faTeacher = new FormAddTeacher(tea, logindto);
 			this.Hide();
 			faTeacher.ShowDialog();
 
@@ -442,14 +441,26 @@ namespace Oracle.GUI
 			int res_ind = (currentPageProject - 1) * recordsPerPage + index;
 			projectDTO pro = new projectDTO(DAO.ProjectDAO.Instance.GetProjectsData().Rows[res_ind]);
 
-			faProject = new FormAddProject(pro);
+			faProject = new FormAddProject(pro,logindto);
 			this.Hide();
 			faProject.ShowDialog();
 		}
 
 		private void btnDeleteProject_Click(object sender, EventArgs e)
 		{
+			int index = DatagvListProjects.CurrentCell.RowIndex;
+			int res_ind = (currentPageProject - 1) * recordsPerPage + index;
+			projectDTO pro = new projectDTO(DAO.ProjectDAO.Instance.GetProjectsData().Rows[res_ind]);
+			if (DAO.DetailDAO.Instance.DeleteDetailsProject(pro.Id) && DAO.ProjectDAO.Instance.DeleteProject(pro.Id))
+			{
+				MessageBox.Show("Xóa dự án có mã :  " + pro.Id + "  thành công !");
+				pageListProjectData();
+			}
+			else
+			{
+				MessageBox.Show("Xóa thất bại !");
 
+			}
 		}
 
 		private void btnViewProject_Click(object sender, EventArgs e)
@@ -506,10 +517,6 @@ namespace Oracle.GUI
 			datagvListAccount.Columns[4].HeaderText = "Chức vụ";
 			datagvListAccount.ColumnHeadersHeight = 30;
 			datagvListAccount.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
-			cbFitterAcc.Items.Clear();
-			cbFitterAcc.Items.Add("Giáo viên");
-			cbFitterAcc.Items.Add("Sinh viên");
 		}
 		private void PageListAccountData()
 		{
@@ -910,7 +917,7 @@ namespace Oracle.GUI
 			int index = datagvListStudentbyTeacher.CurrentCell.RowIndex;
 			int res_ind = (currentPageStudentsByTea - 1) * recordsPerPage + index;
 			studentDTO stu = new studentDTO(DAO.StudentsDAO.Instance.GetStudentByTeacherID(logindto.Id).Rows[res_ind]);
-			fviewProject = new FormViewProject(stu);
+			fviewProject = new FormViewProject(stu, logindto);
 			this.Hide();
 			fviewProject.ShowDialog();
 		}
@@ -920,6 +927,18 @@ namespace Oracle.GUI
 			fLogin = new FormLogin();
 			this.Hide();
 			fLogin.Show();
+		}
+
+		private void btnViewStudent_Click(object sender, EventArgs e)
+		{
+			int index = DatagvListStudents.CurrentCell.RowIndex;
+			int res_ind = (currentPageStudents - 1) * recordsPerPage + index;
+			studentDTO stu = new studentDTO(DAO.StudentsDAO.Instance.GetStudentData().Rows[res_ind]);
+
+			fviewProject = new FormViewProject(stu,logindto);
+			this.Hide();
+			fviewProject.ShowDialog();
+
 		}
 	}
 }

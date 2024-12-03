@@ -97,7 +97,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\ClassDAO.cs" />
-    <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\DetailDAO.cs" />
     <Compile Include="DAO\ProjectDAO.cs" />
     <Compile Include="DAO\StudentsDAO.cs" />
@@ -204,6 +203,11 @@
   <ItemGroup>
     <None Include="Resources\Screenshot 2024-11-26 202243.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icons8-back-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-left-100.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

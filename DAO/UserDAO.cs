@@ -30,7 +30,7 @@ namespace Oracle.DAO
 		private string connectionStr = "Data Source=(DESCRIPTION= " + 
 			"(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))" + 
 			"(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=orcl)));"+
-			"User Id=system;Password=abc123;";
+			"User Id=nhom01_oracle;Password=abc123;";
 
 
 		public bool checkLogin(string userName, string passWord)

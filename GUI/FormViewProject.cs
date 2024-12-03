@@ -8,6 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 using System.Windows.Forms;
 
 namespace Oracle.GUI
@@ -15,11 +16,14 @@ namespace Oracle.GUI
 	public partial class FormViewProject : Form
 	{
 		private studentDTO student;
-		public FormViewProject(studentDTO student)
+		private loginDTO login;
+		private FormMain main;
+		public FormViewProject(studentDTO student, loginDTO login)
 		{
 			InitializeComponent();
 			this.student = student;
 			InfoProjectByStudent();
+			this.login = login;
 		}
 
 		private void InfoProjectByStudent()
@@ -87,5 +91,11 @@ namespace Oracle.GUI
 			System.Diagnostics.Process.Start(tempFilePath);
 		}
 
+		private void btnBackViewproject_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			main = new FormMain(login);
+			main.Show();
+		}
 	}
 }

@@ -18,12 +18,15 @@ namespace Oracle.GUI
 		private projectDTO project_dto;
 		private ValidateData validate;
 		private projectDTO project_needed;
-		public FormAddProject(projectDTO projectDTO)
+		private loginDTO login;
+		private FormMain main;
+		public FormAddProject(projectDTO projectDTO, loginDTO login)
 		{
 			InitializeComponent();
 			this.project_dto = projectDTO;
 			LoadInputId();
 			validate = new ValidateData();
+			this.login = login;
 		}
 
 		private void LoadInputId()
@@ -109,11 +112,18 @@ namespace Oracle.GUI
 			project_needed.Endtime = dtEndProject.Value;
 
 			DataTable dtPro = DAO.ProjectDAO.Instance.GetProjectID(project_needed.Id);
+
+			DetailsDTO details = new DetailsDTO();
+			details.Id_project = project_needed.Id;
+			details.Id_process = "PR01";
+			details.Complete_date = DateTime.Now;
+			details.Filename = null;
+			details.Content = null;
 			if(dtPro.Rows.Count ==0)
 			{
 				if (project_needed.Name != "")
 				{
-					if (DAO.ProjectDAO.Instance.InsertProject(project_needed))
+					if (DAO.ProjectDAO.Instance.InsertProject(project_needed) && DAO.DetailDAO.Instance.InsertDetailsProject(details) )
 					{
 						MessageBox.Show("Thêm đồ án mã  " + project_needed.Id + "  thành công !");
 					}
@@ -162,6 +172,13 @@ namespace Oracle.GUI
 		private void btnSubmitRefreshProject_Click(object sender, EventArgs e)
 		{
 			RefreshPro();
+		}
+
+		private void btnBackProject_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			main = new FormMain(login);
+			main.Show();
 		}
 	}
 }

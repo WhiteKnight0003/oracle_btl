@@ -26,7 +26,7 @@ namespace Oracle.DAO
 		private string connectionStr = "Data Source=(DESCRIPTION= " +
 			"(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))" +
 			"(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=orcl)));" +
-			"User Id=system;Password=abc123;";
+			"User Id=nhom01_oracle;Password=abc123;";
 
 		public DataTable GetProjectsData()
 		{
@@ -123,6 +123,33 @@ namespace Oracle.DAO
 			catch (Exception ex)
 			{
 				MessageBox.Show("Lỗi khi cập nhật  đồ án : " + ex.Message);
+				return false;
+			}
+		}
+
+		public bool DeleteProject(string id_project)
+		{
+			try
+			{
+				using (OracleConnection connection = new OracleConnection(connectionStr))
+				{
+					connection.Open();
+
+					using (OracleCommand cmd = new OracleCommand("DELETE FROM  nhom01_oracle.projects where ID = :id ", connection))
+					{
+						cmd.CommandType = CommandType.Text;
+
+						// Thêm parameter
+						cmd.Parameters.Add(new OracleParameter("id", id_project));
+						// Execute the command
+						cmd.ExecuteNonQuery();
+						return true;
+					}
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Lỗi khi xóa đồ án  : " + ex.Message);
 				return false;
 			}
 		}

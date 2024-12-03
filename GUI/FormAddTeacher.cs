@@ -20,13 +20,15 @@ namespace Oracle.GUI
 		private teachersDTO teachers;
 		private ValidateData validate;
 		private teachersDTO teacher_dto;
-
-		public FormAddTeacher(teachersDTO teachers)
+		private loginDTO login;
+		private FormMain main;
+		public FormAddTeacher(teachersDTO teachers, loginDTO login)
 		{
 			InitializeComponent();
 			this.teacher_dto = teachers;
 			LoadInputId();		
 			validate = new ValidateData();
+			this.login = login;
 		}
 
 		#region methods
@@ -268,6 +270,13 @@ namespace Oracle.GUI
 		private void btnSubmitRefreshTeachers_Click(object sender, EventArgs e)
 		{
 			RefreshTea();
+		}
+
+		private void btnBackTeacher_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			main = new FormMain(login);
+			main.Show();
 		}
 	}
 }

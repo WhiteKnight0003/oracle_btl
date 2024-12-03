@@ -33,7 +33,6 @@
 			this.txbL_username = new Guna.UI2.WinForms.Guna2TextBox();
 			this.txbL_password = new Guna.UI2.WinForms.Guna2TextBox();
 			this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
-			this.linklb_Forget_password = new System.Windows.Forms.LinkLabel();
 			this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
 			this.guna2Panel1.SuspendLayout();
 			this.SuspendLayout();
@@ -121,21 +120,9 @@
 			this.btnLogin.Text = "Đăng nhập";
 			this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
 			// 
-			// linklb_Forget_password
-			// 
-			this.linklb_Forget_password.AutoSize = true;
-			this.linklb_Forget_password.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
-			this.linklb_Forget_password.Location = new System.Drawing.Point(402, 331);
-			this.linklb_Forget_password.Name = "linklb_Forget_password";
-			this.linklb_Forget_password.Size = new System.Drawing.Size(227, 25);
-			this.linklb_Forget_password.TabIndex = 5;
-			this.linklb_Forget_password.TabStop = true;
-			this.linklb_Forget_password.Text = "Bạn quên mật khẩu ?";
-			// 
 			// guna2Panel1
 			// 
 			this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
-			this.guna2Panel1.Controls.Add(this.linklb_Forget_password);
 			this.guna2Panel1.Controls.Add(this.guna2HtmlLabel2);
 			this.guna2Panel1.Controls.Add(this.btnLogin);
 			this.guna2Panel1.Controls.Add(this.txbL_username);
@@ -157,7 +144,6 @@
 			this.Text = "Form1";
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLogin_FormClosed);
 			this.guna2Panel1.ResumeLayout(false);
-			this.guna2Panel1.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -169,7 +155,6 @@
 		private Guna.UI2.WinForms.Guna2TextBox txbL_username;
 		private Guna.UI2.WinForms.Guna2TextBox txbL_password;
 		private Guna.UI2.WinForms.Guna2Button btnLogin;
-		private System.Windows.Forms.LinkLabel linklb_Forget_password;
 		private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
 	}
 }

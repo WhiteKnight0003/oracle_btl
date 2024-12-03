@@ -40,6 +40,7 @@
 			this.tbInputTeacherEmail = new Guna.UI2.WinForms.Guna2TextBox();
 			this.tbInputTeacherCountry = new Guna.UI2.WinForms.Guna2TextBox();
 			this.tbInputTeacherName = new Guna.UI2.WinForms.Guna2TextBox();
+			this.tbInputTeacherID = new Guna.UI2.WinForms.Guna2TextBox();
 			this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
 			this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
 			this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -47,8 +48,8 @@
 			this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
 			this.btnSubmitAddTeachers = new Guna.UI2.WinForms.Guna2Button();
 			this.btnSubmitRefreshTeachers = new Guna.UI2.WinForms.Guna2Button();
-			this.tbInputTeacherID = new Guna.UI2.WinForms.Guna2TextBox();
 			this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+			this.btnBackTeacher = new Guna.UI2.WinForms.Guna2Button();
 			this.guna2Panel1.SuspendLayout();
 			this.gbSexteachers.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
@@ -58,7 +59,7 @@
 			// 
 			this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
 			this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.guna2HtmlLabel1.Location = new System.Drawing.Point(30, 13);
+			this.guna2HtmlLabel1.Location = new System.Drawing.Point(97, 12);
 			this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
 			this.guna2HtmlLabel1.Size = new System.Drawing.Size(129, 25);
 			this.guna2HtmlLabel1.TabIndex = 0;
@@ -224,6 +225,28 @@
 			this.tbInputTeacherName.Size = new System.Drawing.Size(307, 21);
 			this.tbInputTeacherName.TabIndex = 1;
 			// 
+			// tbInputTeacherID
+			// 
+			this.tbInputTeacherID.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.tbInputTeacherID.DefaultText = "";
+			this.tbInputTeacherID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.tbInputTeacherID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.tbInputTeacherID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbInputTeacherID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbInputTeacherID.Enabled = false;
+			this.tbInputTeacherID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.tbInputTeacherID.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.tbInputTeacherID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.tbInputTeacherID.Location = new System.Drawing.Point(279, 17);
+			this.tbInputTeacherID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.tbInputTeacherID.Name = "tbInputTeacherID";
+			this.tbInputTeacherID.PasswordChar = '\0';
+			this.tbInputTeacherID.PlaceholderText = "";
+			this.tbInputTeacherID.ReadOnly = true;
+			this.tbInputTeacherID.SelectedText = "";
+			this.tbInputTeacherID.Size = new System.Drawing.Size(307, 21);
+			this.tbInputTeacherID.TabIndex = 0;
+			// 
 			// guna2HtmlLabel7
 			// 
 			this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
@@ -305,37 +328,33 @@
 			this.btnSubmitRefreshTeachers.Text = "Làm mới";
 			this.btnSubmitRefreshTeachers.Click += new System.EventHandler(this.btnSubmitRefreshTeachers_Click);
 			// 
-			// tbInputTeacherID
-			// 
-			this.tbInputTeacherID.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.tbInputTeacherID.DefaultText = "";
-			this.tbInputTeacherID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-			this.tbInputTeacherID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-			this.tbInputTeacherID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.tbInputTeacherID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.tbInputTeacherID.Enabled = false;
-			this.tbInputTeacherID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.tbInputTeacherID.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.tbInputTeacherID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.tbInputTeacherID.Location = new System.Drawing.Point(279, 17);
-			this.tbInputTeacherID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.tbInputTeacherID.Name = "tbInputTeacherID";
-			this.tbInputTeacherID.PasswordChar = '\0';
-			this.tbInputTeacherID.PlaceholderText = "";
-			this.tbInputTeacherID.ReadOnly = true;
-			this.tbInputTeacherID.SelectedText = "";
-			this.tbInputTeacherID.Size = new System.Drawing.Size(307, 21);
-			this.tbInputTeacherID.TabIndex = 0;
-			// 
 			// errorProvider
 			// 
 			this.errorProvider.ContainerControl = this;
+			// 
+			// btnBackTeacher
+			// 
+			this.btnBackTeacher.BackgroundImage = global::Oracle.Properties.Resources.icons8_left_100;
+			this.btnBackTeacher.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.btnBackTeacher.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnBackTeacher.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnBackTeacher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnBackTeacher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnBackTeacher.FillColor = System.Drawing.Color.Transparent;
+			this.btnBackTeacher.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.btnBackTeacher.ForeColor = System.Drawing.Color.White;
+			this.btnBackTeacher.Location = new System.Drawing.Point(30, 1);
+			this.btnBackTeacher.Name = "btnBackTeacher";
+			this.btnBackTeacher.Size = new System.Drawing.Size(51, 36);
+			this.btnBackTeacher.TabIndex = 14;
+			this.btnBackTeacher.Click += new System.EventHandler(this.btnBackTeacher_Click);
 			// 
 			// FormAddTeacher
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 503);
+			this.Controls.Add(this.btnBackTeacher);
 			this.Controls.Add(this.btnSubmitRefreshTeachers);
 			this.Controls.Add(this.btnSubmitAddTeachers);
 			this.Controls.Add(this.guna2Panel1);
@@ -375,5 +394,6 @@
 		private Guna.UI2.WinForms.Guna2Button btnSubmitRefreshTeachers;
 		private Guna.UI2.WinForms.Guna2TextBox tbInputTeacherID;
 		private System.Windows.Forms.ErrorProvider errorProvider;
+		private Guna.UI2.WinForms.Guna2Button btnBackTeacher;
 	}
 }

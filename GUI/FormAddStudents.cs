@@ -18,13 +18,16 @@ namespace Oracle.GUI
 		private studentDTO student;
 		private ValidateData validate;
 		private studentDTO student_dto;
-		public FormAddStudents(studentDTO student_dto)
+		private loginDTO login;
+		private FormMain main;
+		public FormAddStudents(studentDTO student_dto, loginDTO login)
 		{
 			InitializeComponent();
 			this.student_dto = student_dto;
 			LoadInputId();
 			validate = new ValidateData();
-			
+			this.login = login;
+
 		}
 		#region methods
 		private void LoadInputId()
@@ -291,6 +294,13 @@ namespace Oracle.GUI
 		private void btnSubmitRefreshStudent_Click(object sender, EventArgs e)
 		{
 			RefreshStu();
+		}
+
+		private void btnBackStudent_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			main = new FormMain(login);
+			main.Show();
 		}
 	}
 }
